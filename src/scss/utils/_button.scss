@@ -1,0 +1,29 @@
+.button--bright {
+  border-radius: 10px;
+  padding: 15px 25px;
+  background-color: var(--green1);
+  color: var(--green4);
+  transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease, border 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.426));
+    background-color: var(--green4);
+    color: var(--white);
+  }
+}
+
+.button--dark {
+  border-radius: 10px;
+  padding: 15px 25px;
+  background-color: var(--green3);
+  color: var(--white);
+  transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease, border 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.426));
+    background-color: var(--green4);
+    color: var(--white);
+  }
+}
