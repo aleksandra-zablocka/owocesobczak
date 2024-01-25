@@ -1,0 +1,36 @@
+header {
+  background-color: #4ccaa2c0;
+  background-color: var(--green1);
+  color: var(--green2);
+  border-bottom: var(--green3) 3px solid;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.navigation__item {
+  // font-weight: 500;
+  color: var(--green4);
+  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease;
+
+  &:focus,
+  &:hover {
+    color: var(--green3);
+    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  }
+}

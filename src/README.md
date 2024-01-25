@@ -8,4 +8,6 @@ zeby podswietlal sie active link w nav
 dodac przekierowanie na strone O nas po kliknieciu buttona
 <button type="button" onclick="window.location.href='./o-nas.html'">Dowiedz się więcej</button>
 
-seo
+seo - dodać opis w head strony
+
+dodac modal po wejsciu w karte jablka

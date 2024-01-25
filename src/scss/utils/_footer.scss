@@ -1,0 +1,36 @@
+.page-footer {
+  border-top: var(--green3) 3px solid;
+  background-color: var(--green1);
+}
+
+.page-footer-container {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: filter 0.3s ease, border 0.3s ease;
+
+  &:focus,
+  &:hover {
+    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  }
+}
+
+.footer__email,
+.footer__phone {
+  transition: filter 0.3s ease, border 0.3s ease;
+
+  &:focus,
+  &:hover {
+    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  }
+}
