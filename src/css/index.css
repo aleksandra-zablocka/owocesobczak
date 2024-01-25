@@ -5,8 +5,8 @@
   --green2: #549d53;
   --green3: #0f8a0d;
   --green4: #0e500d;
-  --red1: #ec4722;
-  --red2: #ac3a20;
+  --red1: #ec6a4c;
+  --red2: #ec4722;
   --black: #000000;
 }
 
@@ -57,13 +57,13 @@ h2 {
 }
 
 h3 {
-  color: var(--green3);
-  font-size: 20px;
+  color: var(--red1);
+  font-size: 50px;
 }
 
 h4 {
-  color: var(--green1);
-  font-size: 14px;
+  color: var(--green3);
+  font-size: 20px;
 }
 
 p,
@@ -91,7 +91,7 @@ a {
 }
 
 .button--bright {
-  font-size: 17px;
+  font-size: 20px;
   border-radius: 10px;
   padding: 15px 25px;
   background-color: var(--green1);
@@ -105,12 +105,13 @@ a {
   cursor: pointer;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.426));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.426));
-  background-color: var(--green4);
+  background-color: var(--green3);
   color: var(--white);
 }
 
 .button--dark {
-  font-size: 17px;
+  min-width: 140px;
+  font-size: 20px;
   border-radius: 10px;
   padding: 15px 25px;
   background-color: var(--green3);
@@ -133,6 +134,7 @@ header {
   background-color: var(--green1);
   color: var(--green2);
   border-bottom: var(--green3) 3px solid;
+  border-bottom: var(--green3) 1px solid;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -162,20 +164,26 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 80px;
+  gap: 10px;
 }
 
 .navigation__item {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 10px 2px;
+  border-radius: 10px;
   color: var(--green4);
-  -webkit-transition: color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease;
-  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
+  -webkit-transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
+  transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
+  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
 }
 .navigation__item:focus, .navigation__item:hover {
-  color: var(--green3);
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  color: var(--white);
+  background-color: var(--green3);
 }
 
 .logo {
@@ -197,12 +205,10 @@ header {
   transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
 }
 .logo:focus .logo__details > p, .logo:hover .logo__details > p {
-  color: var(--green3);
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
 }
 .logo:focus .logo__icon, .logo:hover .logo__icon {
-  fill: var(--green3);
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
 }
@@ -276,6 +282,7 @@ header {
 
 .page-footer {
   border-top: var(--green3) 3px solid;
+  border-top: var(--green3) 1px solid;
   background-color: var(--green1);
 }
 
@@ -340,7 +347,7 @@ address:focus, address:hover {
   background-size: cover;
   background-position: center;
   background-size: cover;
-  height: 550px;
+  height: 590px;
   position: relative;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
@@ -375,7 +382,7 @@ address:focus, address:hover {
   text-align: center;
 }
 .hero-container span {
-  color: var(--red1);
+  color: var(--red2);
 }
 
 .offer-container {
@@ -476,6 +483,10 @@ address:focus, address:hover {
 }
 .talk-to-us h2 {
   color: var(--white);
+  text-align: center;
+}
+.talk-to-us p {
+  text-align: center;
 }
 
 .talk-to-us-container {
@@ -488,12 +499,12 @@ address:focus, address:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 }
 
@@ -575,7 +586,7 @@ address:focus, address:hover {
 }
 
 .description-container {
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 30px;
   max-width: 900px;
   display: -webkit-box;
@@ -827,7 +838,7 @@ address:focus, address:hover {
 }
 
 .contact__description {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 .contact__description > p {

@@ -3,6 +3,7 @@ header {
   background-color: var(--green1);
   color: var(--green2);
   border-bottom: var(--green3) 3px solid;
+  border-bottom: var(--green3) 1px solid;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -20,17 +21,25 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  // gap: 80px;
+  gap: 10px;
 }
 
 .navigation__item {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 10px 2px;
+  border-radius: 10px;
   // font-weight: 500;
   color: var(--green4);
-  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease;
+  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease;
 
   &:focus,
   &:hover {
-    color: var(--green3);
+    // color: var(--green3);
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+    color: var(--white);
+    background-color: var(--green3);
   }
 }
