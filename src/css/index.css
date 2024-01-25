@@ -411,19 +411,20 @@ address:focus, address:hover {
   gap: 40px;
   margin-bottom: 30px;
 }
-.offer__figures > figure {
+
+.offer__figure {
   position: relative;
   -webkit-transition: -webkit-filter 0.3s ease;
   transition: -webkit-filter 0.3s ease;
   transition: filter 0.3s ease;
   transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
-.offer__figures > figure:hover, .offer__figures > figure:focus {
+.offer__figure:hover, .offer__figure:focus {
   cursor: pointer;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.426));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.426));
 }
-.offer__figures > figure::before {
+.offer__figure::before {
   content: "";
   position: absolute;
   bottom: 5px;
@@ -438,11 +439,11 @@ address:focus, address:hover {
   transition: opacity 0.3s ease;
   opacity: 0.8;
 }
-.offer__figures > figure:hover::before, .offer__figures > figure:focus::before {
+.offer__figure:hover::before, .offer__figure:focus::before {
   cursor: pointer;
   opacity: 1;
 }
-.offer__figures > figure > figcaption {
+.offer__figure > figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,7 +465,7 @@ address:focus, address:hover {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.offer__figures > figure img {
+.offer__figure img {
   border-radius: 5px;
 }
 
@@ -802,4 +803,133 @@ address:focus, address:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact-container {
+  padding-top: 70px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-container > p {
+  margin-bottom: 40px;
+}
+
+.contact__description {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.contact__description > p {
+  max-width: 700px;
+  text-align: justify;
+}
+
+.write-us-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.worker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.worker > img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.worker__info {
+  font-size: 17px;
+}
+
+.worker__languages {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.worker__languages > img {
+  width: 30px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.163);
+}
+
+.contact-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: var(--green4);
+  font-size: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  resize: none;
+}
+
+.form-group textarea {
+  height: 150px;
 }/*# sourceMappingURL=index.css.map */

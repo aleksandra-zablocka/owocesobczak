@@ -2,7 +2,7 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <title>Owoce Sobczak - O nas</title>
+    <title>Owoce Sobczak - Kontakt</title>
     <link rel="icon" href="./src/images/icons/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./src/css/indexmin.css" />
     <link rel="stylesheet" href="./src/scss/index.scss" />
@@ -53,25 +53,69 @@
     </header>
 
     <main>
-      <section class="about-us">
-        <div class="about-us-container container">
-          <h1>O nas</h1>
-          <div class="about-us__description">
-            <img src="./src/images/photos/appletree-vertical1.jpg" />
+      <section class="contact">
+        <div class="contact-container container">
+          <h1>Kontakt</h1>
+          <div class="contact__description">
             <p>
-              Jesteśmy rodzinną firmą, zanurzoną w sztuce uprawy jabłoni od wielu pokoleń. Nasze gospodarstwo rolne
-              obejmuje rozległe hektary obsianych miłością i troską jabłoni. <br />Dla nas najważniejsze są nie tylko
-              owoce o doskonałym smaku, ale także te, które przynoszą korzyści dla zdrowia. Nasze jabłka są nie tylko
-              pyszne, ale również pełne naturalnych dobroczynnych właściwości, które wnoszą do Twojej codziennej diety
-              odrobinę zdrowego luksusu. Z pasją i zobowiązaniem pielęgnujemy nasze drzewa, starając się osiągnąć
-              doskonałość w każdym owocu. <br />Naszą rodzinną tradycję przenosimy do stworzenia wyjątkowych przetworów,
-              które z dumą prezentujemy zarówno na krajowych, jak i międzynarodowych rynkach. Dołącz do naszej podróży
-              przez smakowite światy jabłek i ich przetworów, gdzie tradycja i innowacja łączą się w perfekcyjnej
-              harmonii, tworząc niezapomniane doznania smakowe.
+              Pragniemy spełniać marzenia o zdrowych, przepysznych jabłkach każdej zainteresowanej osoby! Naszym celem
+              jest zapewnienie kompleksowej obsługi dla wszystkich, niezależnie od preferowanego języka komunikacji.
+              Dlatego też oferujemy wsparcie dla osób mówiących po: <br />- polsku, <br />- angielsku, <br />-
+              niemiecku. <br /><br />Poniżej znajdą Państwo dane naszych Przedstawicieli oraz informacje dotyczące
+              dostępnych języków komunikacji.
             </p>
-            <img src="./src/images/photos/appletree-vertical3.jpg" />
           </div>
-          <p>Zapraszamy do wspólnej podróży!</p>
+
+          <div class="write-us-container container">
+            <figure class="worker">
+              <img src="./src/images/photos/products.jpg" alt="team member Michał" />
+              <figcaption>
+                <h3>Michał</h3>
+                <p><a class="worker__info" href="mailto:michal@owocesobczak.pl">michal@owocesobczak.pl</a></p>
+                <p><a class="worker__info" href="tel:+48500200200">+48 500 200 200</a></p>
+                <div class="worker__languages">
+                  <img src="./src/images/languages/poland.gif" />
+                  <img src="./src/images/languages/germany.gif" />
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="worker">
+              <img src="./src/images/photos/products.jpg" alt="team member Witold" />
+              <figcaption>
+                <h3>Witold</h3>
+                <p><a class="worker__info" href="mailto:witold@owocesobczak.pl">witold@owocesobczak.pl</a></p>
+                <p><a class="worker__info" href="tel:+48500100100">+48 500 100 100</a></p>
+                <div class="worker__languages">
+                  <img src="./src/images/languages/poland.gif" />
+                  <img src="./src/images/languages/germany.gif" />
+                  <img src="./src/images/languages/uk.gif" />
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <p>Zachęcamy również do kontaktu poprzez nasz formularz:</p>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Imię i nazwisko:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Nr telefonu:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Treść wiadomości:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="button--dark" type="submit">Wyślij</button>
+          </form>
         </div>
       </section>
     </main>
