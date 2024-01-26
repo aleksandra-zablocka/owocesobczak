@@ -555,8 +555,20 @@ address:focus, address:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   gap: 40px;
+  position: relative;
+}
+.about-us__description::after {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 500px;
+  height: 2px;
+  background-color: var(--green1);
 }
 .about-us__description > p {
   max-width: 500px;
