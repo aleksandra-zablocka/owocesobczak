@@ -36,7 +36,7 @@
 .products__item {
   flex-basis: calc((100% - 2 * 50px) / 3);
   margin-bottom: 20px;
-  filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  filter: drop-shadow(0 2px 4px rgba(30, 68, 6, 0.232));
   display: flex;
   justify-content: center;
 }
@@ -74,6 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
 }
 
 .services-container {

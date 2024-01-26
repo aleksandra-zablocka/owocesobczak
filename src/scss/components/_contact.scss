@@ -38,6 +38,7 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   }
 }
 
@@ -60,7 +61,7 @@
 }
 
 .contact-form {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -75,6 +76,8 @@
 }
 
 .form-group label {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   color: var(--green4);
   font-size: 18px;
@@ -83,6 +86,7 @@
 .form-group input,
 .form-group textarea {
   width: 100%;
+  width: 400px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -93,4 +97,17 @@
 
 .form-group textarea {
   height: 150px;
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: var(--green1a);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
 }

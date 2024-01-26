@@ -112,6 +112,8 @@
   margin-top: 40px;
   background-color: var(--green2);
   position: relative;
+  filter: drop-shadow(2px 0 6px rgba(30, 68, 6, 0.232));
+  // filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
 
   h2 {
     color: var(--white);
