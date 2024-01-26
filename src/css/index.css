@@ -9,6 +9,7 @@
   --red1: #ec6a4c;
   --red2: #ec4722;
   --black: #000000;
+  --grey: #d7d9d7;
 }
 
 *,
@@ -49,6 +50,7 @@ h1 {
   color: var(--green2);
   font-weight: 900;
   font-size: 100px;
+  line-height: 1.1;
 }
 
 h2 {
@@ -92,7 +94,7 @@ a {
 }
 
 .button--bright {
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 10px;
   padding: 15px 25px;
   background-color: var(--green1);
@@ -112,7 +114,7 @@ a {
 
 .button--dark {
   min-width: 140px;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 10px;
   padding: 15px 25px;
   background-color: var(--green3);
@@ -131,18 +133,22 @@ a {
 }
 
 header {
-  background-color: rgba(76, 202, 162, 0.7529411765);
+  font-family: "Poppins", sans-serif;
   background-color: var(--green1a);
+  background-color: var(--grey);
+  background-color: var(--white);
   color: var(--green2);
-  border-bottom: var(--green3) 3px solid;
-  border-bottom: var(--green3) 1px solid;
+  border-bottom: var(--green1a) 1px solid;
+  border-bottom: var(--green1b) 1px solid;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 999;
+  height: 60px;
 }
 
 .header-container {
-  height: 50px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,12 +175,16 @@ header {
 }
 
 .navigation__item {
+  text-transform: uppercase;
+  font-size: 18px;
   display: inline-block;
-  width: 150px;
+  min-width: 87px;
   text-align: center;
-  padding: 10px 2px;
+  padding: 10px 10px;
   border-radius: 10px;
+  font-weight: 500;
   color: var(--green4);
+  color: var(--green3);
   -webkit-transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
   transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
   transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease;
@@ -200,6 +210,7 @@ header {
 }
 .logo__icon {
   fill: var(--green4);
+  fill: var(--green3);
   -webkit-transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
   transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
   transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
@@ -227,54 +238,11 @@ header {
   gap: 10px;
 }
 .logo__details > p {
+  text-transform: uppercase;
   color: var(--green4);
-  -webkit-transition: color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease;
-  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-}
-
-.logo2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.logo2__icon {
-  fill: var(--green4);
-  -webkit-transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
-  transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-}
-.logo2:focus .logo2__details > p, .logo2:hover .logo2__details > p {
-  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-}
-.logo2:focus .logo2__icon, .logo2:hover .logo2__icon {
-  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-}
-
-.logo2__details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-}
-.logo2__details > p {
-  color: var(--green4);
+  color: var(--green3);
+  font-weight: 500;
+  font-size: 18px;
   -webkit-transition: color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
   transition: color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
   transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease;
@@ -282,8 +250,8 @@ header {
 }
 
 .page-footer {
-  border-top: var(--green3) 3px solid;
-  border-top: var(--green3) 1px solid;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--grey);
   background-color: var(--green1a);
 }
 
@@ -321,6 +289,9 @@ address {
   transition: filter 0.3s ease, border 0.3s ease;
   transition: filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
 }
+address > a {
+  font-size: 17px;
+}
 address:focus, address:hover {
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
@@ -333,6 +304,12 @@ address:focus, address:hover {
   transition: filter 0.3s ease, border 0.3s ease;
   transition: filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
 }
+.footer__email > p,
+.footer__email a,
+.footer__phone > p,
+.footer__phone a {
+  font-size: 17px;
+}
 .footer__email:focus, .footer__email:hover,
 .footer__phone:focus,
 .footer__phone:hover {
@@ -341,6 +318,7 @@ address:focus, address:hover {
 }
 
 .hero {
+  margin-top: 60px;
   padding-top: 50px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/photos/hero.jpg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/photos/hero.jpg");
@@ -348,7 +326,7 @@ address:focus, address:hover {
   background-size: cover;
   background-position: center;
   background-size: cover;
-  height: 590px;
+  height: 650px;
   position: relative;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
@@ -388,6 +366,7 @@ address:focus, address:hover {
 
 .offer-container {
   padding-top: 60px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,7 +524,8 @@ address:focus, address:hover {
 }
 
 .about-us-container {
-  padding-top: 70px;
+  padding-top: 90px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,7 +571,7 @@ address:focus, address:hover {
 }
 
 .description-container {
-  padding-top: 70px;
+  padding-top: 90px;
   padding-bottom: 30px;
   max-width: 900px;
   display: -webkit-box;
@@ -636,6 +616,23 @@ address:focus, address:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+#products {
+  margin-top: 60px;
+  position: relative;
+}
+#products::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 900px;
+  height: 2px;
+  background-color: var(--green1);
 }
 
 .products__list {
@@ -750,6 +747,22 @@ address:focus, address:hover {
           align-items: center;
 }
 
+#services {
+  margin-top: 60px;
+  position: relative;
+}
+#services::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 900px;
+  height: 2px;
+  background-color: var(--green1);
+}
+
 .services__list {
   width: 80%;
   list-style: none;
@@ -824,7 +837,7 @@ address:focus, address:hover {
 }
 
 .contact-container {
-  padding-top: 70px;
+  padding-top: 90px;
   margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,6 +877,7 @@ address:focus, address:hover {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 50px;
+  padding-bottom: 40px;
 }
 
 .worker {
@@ -911,7 +925,7 @@ address:focus, address:hover {
 
 .contact-form {
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,6 +940,18 @@ address:focus, address:hover {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  position: relative;
+}
+.contact-form::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 600px;
+  height: 2px;
+  background-color: var(--green1);
 }
 
 .form-container .form-group {

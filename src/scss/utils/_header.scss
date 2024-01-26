@@ -1,16 +1,20 @@
 header {
-  background-color: #4ccaa2c0;
+  font-family: "Poppins", sans-serif;
   background-color: var(--green1a);
+  background-color: var(--grey);
+  background-color: var(--white);
   color: var(--green2);
-  border-bottom: var(--green3) 3px solid;
-  border-bottom: var(--green3) 1px solid;
+  border-bottom: var(--green1a) 1px solid;
+  border-bottom: var(--green1b) 1px solid;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 999;
+  height: 60px;
 }
 
 .header-container {
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,18 +25,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  // gap: 80px;
   gap: 10px;
 }
 
 .navigation__item {
+  text-transform: uppercase;
+  font-size: 18px;
   display: inline-block;
-  width: 150px;
+  // width: 150px;
+  min-width: 87px;
   text-align: center;
-  padding: 10px 2px;
+  padding: 10px 10px;
   border-radius: 10px;
-  // font-weight: 500;
+  font-weight: 500;
   color: var(--green4);
+  color: var(--green3);
   transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease;
 
   &:focus,
