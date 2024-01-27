@@ -5,12 +5,16 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 65px;
   color: var(--green2);
   font-weight: 900;
   line-height: 1.1;
 
   @include tablet {
+    font-size: 80px;
+  }
+
+  @include desktop {
     font-size: 100px;
   }
 }
@@ -18,7 +22,15 @@ h1 {
 h2 {
   color: var(--green3);
   font-weight: 900;
-  font-size: 64px;
+  font-size: 50px;
+
+  @include tablet {
+    font-size: 50px;
+  }
+
+  @include desktop {
+    font-size: 64px;
+  }
 }
 
 h3 {
@@ -34,7 +46,9 @@ h4 {
 p,
 ul,
 a {
-  font-size: 16px;
+  line-height: 1.5;
+  // font-size: 16px;
+  font-size: 20px;
   color: var(--green4);
 
   @include tablet {
