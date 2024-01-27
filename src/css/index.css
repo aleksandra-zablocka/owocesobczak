@@ -47,10 +47,15 @@ body {
 }
 
 h1 {
+  font-size: 50px;
   color: var(--green2);
   font-weight: 900;
-  font-size: 100px;
   line-height: 1.1;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 100px;
+  }
 }
 
 h2 {
@@ -72,8 +77,15 @@ h4 {
 p,
 ul,
 a {
+  font-size: 16px;
   color: var(--green4);
-  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  p,
+  ul,
+  a {
+    font-size: 20px;
+  }
 }
 
 .container {
@@ -94,15 +106,21 @@ a {
 }
 
 .button--bright {
-  font-size: 18px;
+  font-size: 13px;
   border-radius: 10px;
-  padding: 15px 25px;
+  padding: 10px 20px;
   background-color: var(--green1);
   color: var(--green4);
   -webkit-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease, border 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
+}
+@media screen and (min-width: 1199px) {
+  .button--bright {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
 }
 .button--bright:hover {
   cursor: pointer;
@@ -195,6 +213,49 @@ header {
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   color: var(--white);
   background-color: var(--green3);
+}
+
+@media screen and (min-width: 1199px) {
+  .mobile-navigation {
+    display: none;
+  }
+}
+
+.mobile__button {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mobile__button .icn {
+  fill: var(--green4);
+  fill: var(--green3);
+  -webkit-transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
+  transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
+  transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
+  transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
+}
+.mobile__button:focus .icn, .mobile__button:hover .icn {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+}
+
+.page-navigation {
+  display: none;
+}
+@media screen and (min-width: 1199px) {
+  .page-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .logo {
@@ -319,17 +380,28 @@ address:focus, address:hover {
 
 .hero {
   margin-top: 60px;
-  padding-top: 50px;
+  padding: 20px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/photos/hero.jpg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/photos/hero.jpg");
   background-position: center;
   background-size: cover;
   background-position: center;
   background-size: cover;
-  height: 650px;
+  max-height: 550px;
   position: relative;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 650px;
+    max-height: 650px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .hero {
+    padding-top: 50px;
+  }
 }
 
 .hero-container {
@@ -354,11 +426,15 @@ address:focus, address:hover {
   color: var(--white);
 }
 .hero-container p {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  margin: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   max-width: 700px;
   text-align: center;
+}
+@media screen and (min-width: 1199px) {
+  .hero-container p {
+    margin: 30px;
+  }
 }
 .hero-container span {
   color: var(--red2);

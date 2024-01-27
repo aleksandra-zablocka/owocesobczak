@@ -1,10 +1,15 @@
 .button--bright {
-  font-size: 18px;
+  font-size: 13px;
   border-radius: 10px;
-  padding: 15px 25px;
+  padding: 10px 20px;
   background-color: var(--green1);
   color: var(--green4);
   transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease, border 0.3s ease;
+
+  @include desktop {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
 
   &:hover {
     cursor: pointer;

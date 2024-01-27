@@ -50,3 +50,36 @@ header {
     background-color: var(--green3);
   }
 }
+
+.mobile-navigation {
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile__button {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icn {
+    fill: var(--green4);
+    fill: var(--green3);
+    transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
+  }
+
+  &:focus .icn,
+  &:hover .icn {
+    // fill: var(--green3);
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  }
+}
+
+.page-navigation {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
+}

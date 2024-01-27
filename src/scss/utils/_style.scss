@@ -5,10 +5,14 @@ body {
 }
 
 h1 {
+  font-size: 50px;
   color: var(--green2);
   font-weight: 900;
-  font-size: 100px;
   line-height: 1.1;
+
+  @include tablet {
+    font-size: 100px;
+  }
 }
 
 h2 {
@@ -30,6 +34,10 @@ h4 {
 p,
 ul,
 a {
+  font-size: 16px;
   color: var(--green4);
-  font-size: 20px;
+
+  @include tablet {
+    font-size: 20px;
+  }
 }
