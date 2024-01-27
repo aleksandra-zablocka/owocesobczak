@@ -47,7 +47,7 @@ body {
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 50px;
   color: var(--green2);
   font-weight: 900;
   line-height: 1.1;
@@ -94,6 +94,7 @@ ul,
 a {
   line-height: 1.5;
   font-size: 20px;
+  font-size: 16px;
   color: var(--green4);
 }
 @media screen and (min-width: 768px) {
@@ -710,8 +711,8 @@ address:focus, address:hover {
   fill: rgb(173, 173, 173);
   border-radius: 50%;
   background-color: rgb(231, 231, 231);
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
 }
 @media screen and (min-width: 768px) {
   .team__icon {
