@@ -1,5 +1,5 @@
 .contact-container {
-  padding-top: 90px;
+  padding-top: 110px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -18,28 +18,69 @@
   > p {
     max-width: 700px;
     text-align: justify;
+
+    @include desktop {
+      max-width: 900px;
+    }
   }
 }
 
 .write-us-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 50px;
   padding-bottom: 40px;
+
+  @include tablet {
+    gap: 30px;
+    flex-direction: row;
+    max-width: 700px;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+    max-width: 900px;
+  }
 }
 
 .worker {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
+
+  @include tablet {
+    gap: 15px;
+    flex-direction: row;
+  }
+
+  > figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      justify-content: left;
+      align-items: start;
+    }
+  }
 
   > img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+
+    @include tablet {
+      width: 150px;
+      height: 150px;
+    }
   }
 }
 
