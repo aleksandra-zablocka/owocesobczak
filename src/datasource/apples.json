@@ -22,16 +22,16 @@
   },
   {
     "name": "Fuji",
-    "color": "Czerwony",
+    "color": "Zielony",
     "class": "II",
     "img": "./src/images/apples/fuji.jpg",
     "alt": "jabłko Fuji"
   },
   {
     "name": "Champion",
-    "color": "Zielony",
+    "color": "Czerwony",
     "class": "II",
-    "img": "./src/images/apples/champion.png",
+    "img": "./src/images/apples/champion.jpg",
     "alt": "jabłko Champion"
   },
   {
