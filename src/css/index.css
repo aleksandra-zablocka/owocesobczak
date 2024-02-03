@@ -1007,12 +1007,18 @@ address:focus, address:hover {
 
 .products__image {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
 }
 
 .product__figure {
   width: 250px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1208,6 +1214,62 @@ address:focus, address:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.apple-backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.179);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.apple-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.apple-modal > .apple-title {
+  margin-bottom: 20px;
+}
+.apple-modal > img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 25px;
+}
+.closeBtn:hover, .closeBtn:focus {
+  cursor: pointer;
 }
 
 .contact-container {

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Gala",
+    "color": "Czerwony",
+    "class": "I",
+    "img": "./src/images/apples/gala.jpg",
+    "alt": "jabłko Gala"
+  },
+  {
+    "name": "Granny Smith",
+    "color": "Zielony",
+    "class": "I",
+    "img": "./src/images/apples/grannysmith.jpg",
+    "alt": "jabłko Granny Smith"
+  },
+  {
+    "name": "Pink Lady",
+    "color": "Czerwony",
+    "class": "I",
+    "img": "./src/images/apples/pinklady.jpg",
+    "alt": "jabłko Pink Lady"
+  },
+  {
+    "name": "Fuji",
+    "color": "Czerwony",
+    "class": "II",
+    "img": "./src/images/apples/fuji.jpg",
+    "alt": "jabłko Fuji"
+  },
+  {
+    "name": "Champion",
+    "color": "Zielony",
+    "class": "II",
+    "img": "./src/images/apples/champion.png",
+    "alt": "jabłko Champion"
+  },
+  {
+    "name": "Jabłka sezonowe",
+    "color": "Zielony, Czerwony",
+    "class": "I, II",
+    "img": "./src/images/apples/seasonal.jpg",
+    "alt": "jabłka sezonowe"
+  }
+]

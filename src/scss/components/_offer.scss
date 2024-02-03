@@ -69,12 +69,16 @@
 
 .products__image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
 }
 
 .product__figure {
   width: 250px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,4 +206,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.apple-backdrop {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.179);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.apple-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  > .apple-title {
+    margin-bottom: 20px;
+  }
+
+  > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 25px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
