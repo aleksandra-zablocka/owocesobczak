@@ -1265,7 +1265,7 @@ address:focus, address:hover {
 .closeBtn {
   position: absolute;
   top: 5px;
-  right: 10px;
+  right: 13px;
   font-size: 25px;
 }
 .closeBtn:hover, .closeBtn:focus {

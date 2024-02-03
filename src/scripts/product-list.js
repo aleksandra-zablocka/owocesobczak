@@ -37,17 +37,25 @@ function showModal(apple) {
        <img src="${apple.img}" alt="${apple.alt}">
      `;
 
+  function closeModal() {
+    document.body.removeChild(appleBackdrop);
+    document.removeEventListener("keydown", handleKeyPress);
+  }
+
+  function handleKeyPress(event) {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  }
+
   appleBackdrop.addEventListener("click", (event) => {
     if (event.target === appleBackdrop || event.target.classList.contains("closeBtn")) {
-      document.body.removeChild(appleBackdrop);
+      closeModal();
     }
   });
+
+  document.addEventListener("keydown", handleKeyPress);
 
   appleBackdrop.appendChild(appleModal);
   document.body.appendChild(appleBackdrop);
 }
-
-const closeButton = appleModal.querySelector(".closeBtn");
-closeButton.addEventListener("click", () => {
-  appleModal.style.display = "none";
-});
