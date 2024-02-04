@@ -975,6 +975,7 @@ address:focus, address:hover {
 .products__table th,
 .products__table td {
   padding: 15px;
+  padding-left: 25px;
   border: none;
 }
 .products__table th {
