@@ -7,6 +7,7 @@
   --green3: #0f8a0d;
   --green4: #0e500d;
   --red1: #ec6a4c;
+  --red1a: rgba(236, 105, 76, 0.214);
   --red2: #ec4722;
   --black: #000000;
   --grey: #d7d9d7;
@@ -832,28 +833,14 @@ address:focus, address:hover {
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .about-us__description {
-    width: 500px;
-  }
   .about-us__description > p {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1199px) {
   .about-us__description {
-    padding-top: 10px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    padding-top: 20px;
     width: 100%;
-  }
-  .about-us__description > p {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
   }
 }
 .about-us__description::after {
@@ -869,17 +856,37 @@ address:focus, address:hover {
 }
 @media screen and (min-width: 768px) {
   .about-us__description::after {
-    bottom: 45px;
+    bottom: 40px;
     width: 100%;
   }
 }
 .about-us__description > p {
-  max-width: 500px;
+  max-width: 900px;
+  padding: 0 20px;
   text-align: justify;
 }
-.about-us__description > img {
-  width: 320px;
-  height: 320px;
+
+.about-us__images {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+@media screen and (min-width: 768px) {
+  .about-us__images {
+    gap: 50px;
+  }
+}
+.about-us__images > img {
+  width: 220px;
+  height: 220px;
   border-radius: 30px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -889,20 +896,20 @@ address:focus, address:hover {
           filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.352));
 }
 @media screen and (min-width: 768px) {
-  .about-us__description > img {
-    width: 450px;
-    height: 450px;
+  .about-us__images > img {
+    width: 340px;
+    height: 340px;
   }
 }
 @media screen and (min-width: 1199px) {
-  .about-us__description > img {
-    width: 300px;
-    height: 470px;
+  .about-us__images > img {
+    width: 400px;
+    height: 400px;
   }
 }
 
 .description-container {
-  padding-top: 110px;
+  padding-top: 90px;
   padding-bottom: 30px;
   max-width: 900px;
   display: -webkit-box;
@@ -920,6 +927,105 @@ address:focus, address:hover {
           align-items: center;
   gap: 20px;
   text-align: justify;
+  margin-bottom: 30px;
+}
+.description-container > p {
+  text-align: center;
+}
+
+.description-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.description-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.table-container {
+  max-width: 100%;
+  margin: 30px auto;
+  margin-bottom: 90px;
+  position: relative;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--green4);
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+}
+
+th,
+td {
+  padding: 15px;
+  border: none;
+}
+
+th {
+  background-color: var(--green2);
+  color: var(--white);
+  text-align: center;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: var(--green1a);
+}
+
+tr:hover {
+  background-color: var(--green1b);
+}
+
+tr:hover {
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.separator {
+  position: relative;
+}
+.separator::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 320px;
+  height: 2px;
+  background-color: var(--red1a);
+}
+@media screen and (min-width: 768px) {
+  .separator::after {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .separator::after {
+    width: 900px;
+  }
 }
 
 .products-container {
@@ -989,6 +1095,7 @@ address:focus, address:hover {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .products__item {
@@ -1042,6 +1149,12 @@ address:focus, address:hover {
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   cursor: pointer;
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .product__figcaption {
@@ -1127,6 +1240,8 @@ address:focus, address:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1134,29 +1249,21 @@ address:focus, address:hover {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .services__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1199px) {
   .services__list {
     gap: 50px;
+    margin-bottom: 50px;
   }
 }
 
 .services__item {
-  margin-bottom: 20px;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .services__image {
@@ -1195,6 +1302,12 @@ address:focus, address:hover {
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   cursor: pointer;
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .services__figcaption {
@@ -1223,7 +1336,7 @@ address:focus, address:hover {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 9999;
 }
 
 .apple-modal {
@@ -1241,7 +1354,8 @@ address:focus, address:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
-  width: 500px;
+  width: 90%;
+  max-width: 520px;
   height: 500px;
   background-color: #fff;
   border-radius: 10px;
@@ -1252,14 +1366,30 @@ address:focus, address:hover {
           transform: translate(-50%, -50%);
   z-index: 9999;
 }
+@media screen and (min-width: 768px) {
+  .apple-modal {
+    width: 600px;
+    height: 600px;
+  }
+}
 .apple-modal > .apple-title {
   margin-bottom: 20px;
 }
+.apple-modal .apple-description {
+  padding: 10px;
+  max-width: 450px;
+}
 .apple-modal > img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .apple-modal > img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .closeBtn {
@@ -1299,6 +1429,7 @@ address:focus, address:hover {
 }
 .contact__description > p {
   max-width: 700px;
+  padding: 0 20px;
   text-align: justify;
 }
 @media screen and (min-width: 1199px) {

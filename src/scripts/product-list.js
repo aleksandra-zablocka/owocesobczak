@@ -32,8 +32,12 @@ function showModal(apple) {
   appleModal.innerHTML = `
    <span class="closeBtn">&times;</span>
        <h3 class="apple-title">${apple.name}</h3>
-       <p>Kolor: ${apple.color}</p>
-       <p>Klasa: ${apple.class}</p>
+       <div class="apple-description">
+       <p><b>Kształt:</b> ${apple.shape}</p>
+       <p><b>Skórka:</b> ${apple.peel}</p>
+       <p><b>Miąższ:</b> ${apple.inside}</p>
+       <p><b>Kaliber:</b> ${apple.caliber}</p>
+       </div>
        <img src="${apple.img}" alt="${apple.alt}">
      `;
 

@@ -1,5 +1,5 @@
 .description-container {
-  padding-top: 110px;
+  padding-top: 90px;
   padding-bottom: 30px;
   max-width: 900px;
   display: flex;
@@ -8,6 +8,89 @@
   align-items: center;
   gap: 20px;
   text-align: justify;
+  margin-bottom: 30px;
+
+  > p {
+    text-align: center;
+  }
+}
+
+.description-products {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description-services {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.table-container {
+  max-width: 100%;
+  margin: 30px auto;
+  margin-bottom: 90px;
+  position: relative;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--green4);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+}
+
+th,
+td {
+  padding: 15px;
+  border: none;
+}
+
+th {
+  background-color: var(--green2);
+  color: var(--white);
+  text-align: center;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: var(--green1a);
+}
+
+tr:hover {
+  background-color: var(--green1b);
+}
+
+tr:hover {
+  transform: scale(1.015);
+  transition: transform 0.2s ease;
+}
+
+.separator {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 2px;
+    background-color: var(--red1a);
+
+    @include tablet {
+      width: 500px;
+    }
+
+    @include desktop {
+      width: 900px;
+    }
+  }
 }
 
 .products-container {
@@ -57,6 +140,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .products__item {
@@ -90,6 +174,8 @@
   &:focus {
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
     cursor: pointer;
+    transform: scale(1.015);
+    transition: transform 0.2s ease;
   }
 }
 
@@ -150,23 +236,21 @@
   width: 80%;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  flex-direction: column;
-
-  @include tablet {
-    flex-direction: row;
-  }
+  margin-bottom: 30px;
 
   @include desktop {
     gap: 50px;
+    margin-bottom: 50px;
   }
 }
 
 .services__item {
-  margin-bottom: 20px;
   filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  justify-content: center;
 }
 
 .services__image {
@@ -192,6 +276,8 @@
   &:focus {
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
     cursor: pointer;
+    transform: scale(1.015);
+    transition: transform 0.2s ease;
   }
 }
 
@@ -218,7 +304,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 9999;
 }
 
 .apple-modal {
@@ -227,7 +313,8 @@
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  width: 500px;
+  width: 90%;
+  max-width: 520px;
   height: 500px;
   background-color: #fff;
   border-radius: 10px;
@@ -237,14 +324,29 @@
   transform: translate(-50%, -50%);
   z-index: 9999;
 
+  @include tablet {
+    width: 600px;
+    height: 600px;
+  }
+
   > .apple-title {
     margin-bottom: 20px;
   }
 
+  .apple-description {
+    padding: 10px;
+    max-width: 450px;
+  }
+
   > img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+
+    @include tablet {
+      width: 300px;
+      height: 300px;
+    }
   }
 }
 

@@ -1,44 +1,38 @@
 [
   {
-    "name": "Gala",
-    "color": "Czerwony",
-    "class": "I",
+    "name": "Red Pinova",
+    "shape": "duże, kulisto-stożkowe",
+    "peel": "pomarańczowo czerwona, rozmyty rumieniec",
+    "inside": "jasnożółty, średnio soczysty, słodko-kwaskowaty",
+    "caliber": "od 65+ do 95+",
     "img": "./src/images/apples/gala.jpg",
-    "alt": "jabłko Gala"
+    "alt": "jabłko Red Pinova"
   },
   {
-    "name": "Granny Smith",
-    "color": "Zielony",
-    "class": "I",
+    "name": "Jonaprince",
+    "shape": "duże",
+    "peel": "ciemnoczerwony rumieniec, kremowa skórka z czerwono-pomarańczowym rumieńcem",
+    "inside": "słodko-kwaśny, kruchy, soczysty",
+    "caliber": "od 65+ do 95+",
     "img": "./src/images/apples/grannysmith.jpg",
-    "alt": "jabłko Granny Smith"
+    "alt": "jabłko Jonaprince"
   },
   {
-    "name": "Pink Lady",
-    "color": "Czerwony",
-    "class": "I",
+    "name": "Gala Selekt",
+    "shape": "średnie, kuliste lub kulisto-stożkowate",
+    "peel": "gładka, zielonożółta, ciemny rumieniec",
+    "inside": "kremowy, drobnoziarnisty, soczysty, kruchy, słodki",
+    "caliber": "od 65+ do 95+",
     "img": "./src/images/apples/pinklady.jpg",
-    "alt": "jabłko Pink Lady"
+    "alt": "jabłko Gala Selekt"
   },
   {
-    "name": "Fuji",
-    "color": "Zielony",
-    "class": "II",
-    "img": "./src/images/apples/fuji.jpg",
-    "alt": "jabłko Fuji"
-  },
-  {
-    "name": "Champion",
-    "color": "Czerwony",
-    "class": "II",
+    "name": "Gala Schniga",
+    "shape": "małe lub średnie, kulisto-stożkowe",
+    "peel": "złocistożółta, ciemnoczerwony rumieniec",
+    "inside": "kremowy, słodki, kruchy, soczysty",
+    "caliber": "od 65+ do 95+",
     "img": "./src/images/apples/champion.jpg",
-    "alt": "jabłko Champion"
-  },
-  {
-    "name": "Jabłka sezonowe",
-    "color": "Zielony, Czerwony",
-    "class": "I, II",
-    "img": "./src/images/apples/seasonal.jpg",
-    "alt": "jabłka sezonowe"
+    "alt": "jabłko Gala Schniga"
   }
 ]
