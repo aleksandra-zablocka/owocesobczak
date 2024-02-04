@@ -43,28 +43,28 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
 
-  > th,
+  th,
   td {
     padding: 15px;
     border: none;
   }
 
-  > th {
+  th {
     background-color: var(--green2);
     color: var(--white);
     text-align: center;
     text-align: left;
   }
 
-  > tr:nth-child(even) {
+  tr:nth-child(even) {
     background-color: var(--green1a);
   }
 
-  > tr:hover {
+  tr:hover {
     background-color: var(--green1b);
   }
 
-  > tr:hover {
+  tr:hover {
     transform: scale(1.015);
     transition: transform 0.2s ease;
   }

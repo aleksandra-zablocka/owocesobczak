@@ -972,24 +972,24 @@ address:focus, address:hover {
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
 }
-.products__table > th,
+.products__table th,
 .products__table td {
   padding: 15px;
   border: none;
 }
-.products__table > th {
+.products__table th {
   background-color: var(--green2);
   color: var(--white);
   text-align: center;
   text-align: left;
 }
-.products__table > tr:nth-child(even) {
+.products__table tr:nth-child(even) {
   background-color: var(--green1a);
 }
-.products__table > tr:hover {
+.products__table tr:hover {
   background-color: var(--green1b);
 }
-.products__table > tr:hover {
+.products__table tr:hover {
   -webkit-transform: scale(1.015);
           transform: scale(1.015);
   -webkit-transition: -webkit-transform 0.2s ease;
