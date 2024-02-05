@@ -45,9 +45,11 @@ h4 {
 
 p,
 ul,
-a {
+li,
+div,
+a,
+figcaption {
   line-height: 1.5;
-  // font-size: 20px;
   font-size: 16px;
   color: var(--green4);
 

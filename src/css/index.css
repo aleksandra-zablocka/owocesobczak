@@ -92,7 +92,10 @@ h4 {
 
 p,
 ul,
-a {
+li,
+div,
+a,
+figcaption {
   line-height: 1.5;
   font-size: 16px;
   color: var(--green4);
@@ -100,14 +103,20 @@ a {
 @media screen and (min-width: 768px) {
   p,
   ul,
-  a {
+  li,
+  div,
+  a,
+  figcaption {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 1199px) {
   p,
   ul,
-  a {
+  li,
+  div,
+  a,
+  figcaption {
     font-size: 20px;
   }
 }
@@ -416,7 +425,12 @@ address {
   transition: filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
 }
 address > a {
-  font-size: 17px;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  address > a {
+    font-size: 17px;
+  }
 }
 address:focus, address:hover {
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
@@ -450,7 +464,15 @@ address:focus, address:hover {
 .footer__email a,
 .footer__phone > p,
 .footer__phone a {
-  font-size: 17px;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer__email > p,
+  .footer__email a,
+  .footer__phone > p,
+  .footer__phone a {
+    font-size: 17px;
+  }
 }
 .footer__email:focus, .footer__email:hover,
 .footer__phone:focus,
@@ -591,6 +613,12 @@ address:focus, address:hover {
   cursor: pointer;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.426));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.426));
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .offer__figure::before {
   content: "";
@@ -632,17 +660,6 @@ address:focus, address:hover {
   height: 45px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  font-size: 16px;
-}
-@media screen and (min-width: 768px) {
-  .offer__figure > figcaption {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .offer__figure > figcaption {
-    font-size: 20px;
-  }
 }
 .offer__figure img {
   border-radius: 5px;
@@ -910,7 +927,7 @@ address:focus, address:hover {
 
 .description-container {
   padding-top: 90px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   max-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,7 +944,6 @@ address:focus, address:hover {
           align-items: center;
   gap: 20px;
   text-align: justify;
-  margin-bottom: 30px;
 }
 .description-container > p {
   text-align: center;
@@ -958,8 +974,7 @@ address:focus, address:hover {
 .table-container {
   max-width: 100%;
   margin: 30px auto;
-  margin-bottom: 90px;
-  position: relative;
+  margin-bottom: 70px;
   overflow-x: auto;
 }
 
@@ -981,7 +996,6 @@ address:focus, address:hover {
 .products__table th {
   background-color: var(--green2);
   color: var(--white);
-  text-align: center;
   text-align: left;
 }
 .products__table tr:nth-child(even) {
@@ -1005,7 +1019,7 @@ address:focus, address:hover {
 .separator::after {
   content: "";
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1025,7 +1039,6 @@ address:focus, address:hover {
 }
 
 .products-container {
-  padding-bottom: 50px;
   padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1042,6 +1055,32 @@ address:focus, address:hover {
           align-items: center;
 }
 
+.products__separator {
+  margin-top: 40px;
+  position: relative;
+}
+.products__separator::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 320px;
+  height: 2px;
+  background-color: var(--green1);
+}
+@media screen and (min-width: 768px) {
+  .products__separator::before {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .products__separator::before {
+    width: 900px;
+  }
+}
+
 .products {
   padding-top: 30px;
   display: -webkit-box;
@@ -1051,32 +1090,6 @@ address:focus, address:hover {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-
-#products {
-  margin-top: 60px;
-  position: relative;
-}
-#products::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 320px;
-  height: 2px;
-  background-color: var(--green1);
-}
-@media screen and (min-width: 768px) {
-  #products::before {
-    width: 500px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  #products::before {
-    width: 900px;
-  }
 }
 
 .products__list {
@@ -1090,38 +1103,30 @@ address:focus, address:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1199px) {
+  .products__list {
+    gap: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .products__item {
-  -ms-flex-preferred-size: calc((100% - 100px) / 3);
-      flex-basis: calc((100% - 100px) / 3);
-  margin-bottom: 20px;
-  -webkit-filter: drop-shadow(0 2px 4px rgba(30, 68, 6, 0.232));
-          filter: drop-shadow(0 2px 4px rgba(30, 68, 6, 0.232));
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.products__image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-}
-
-.product__figure {
-  width: 250px;
-  height: 250px;
+.products__figure {
+  width: 320px;
+  height: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1141,7 +1146,7 @@ address:focus, address:hover {
   transition: filter 0.3s ease;
   transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
-.product__figure:hover, .product__figure:focus {
+.products__figure:hover, .products__figure:focus {
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   cursor: pointer;
@@ -1153,7 +1158,18 @@ address:focus, address:hover {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
-.product__figcaption {
+.products__image {
+  width: 320px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.products__figcaption {
   width: 100%;
   height: 40px;
   background-color: var(--white);
@@ -1170,8 +1186,6 @@ address:focus, address:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
 }
 
 .services-container {
@@ -1190,6 +1204,32 @@ address:focus, address:hover {
           align-items: center;
 }
 
+.services__separator {
+  margin-top: 30px;
+  position: relative;
+}
+.services__separator::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 320px;
+  height: 2px;
+  background-color: var(--green1);
+}
+@media screen and (min-width: 768px) {
+  .services__separator::before {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .services__separator::before {
+    width: 900px;
+  }
+}
+
 .services {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1202,32 +1242,6 @@ address:focus, address:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#services {
-  margin-top: 60px;
-  position: relative;
-}
-#services::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 320px;
-  height: 2px;
-  background-color: var(--green1);
-}
-@media screen and (min-width: 768px) {
-  #services::before {
-    width: 500px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  #services::before {
-    width: 900px;
-  }
 }
 
 .services__list {
@@ -1356,6 +1370,7 @@ address:focus, address:hover {
   background-color: #fff;
   border-radius: 10px;
   position: fixed;
+  gap: 20px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1369,7 +1384,13 @@ address:focus, address:hover {
   }
 }
 .apple-modal > .apple-title {
-  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  .apple-modal > .apple-title {
+    font-size: 50px;
+  }
 }
 .apple-modal .apple-description {
   padding: 10px;
@@ -1383,6 +1404,90 @@ address:focus, address:hover {
 }
 @media screen and (min-width: 768px) {
   .apple-modal > img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 13px;
+  font-size: 25px;
+}
+.closeBtn:hover, .closeBtn:focus {
+  cursor: pointer;
+}
+
+.service-backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.179);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.service-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  width: 90%;
+  max-width: 520px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  gap: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+@media screen and (min-width: 768px) {
+  .service-modal {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .service-modal {
+    width: 700px;
+  }
+}
+.service-modal > .service-title {
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  .service-modal > .service-title {
+    font-size: 50px;
+  }
+}
+.service-modal .service-description {
+  padding: 10px;
+  max-width: 450px;
+}
+.service-modal > img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .service-modal > img {
     width: 300px;
     height: 300px;
   }

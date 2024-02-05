@@ -36,7 +36,11 @@ address {
   transition: filter 0.3s ease, border 0.3s ease;
 
   > a {
-    font-size: 17px;
+    font-size: 16px;
+
+    @include tablet {
+      font-size: 17px;
+    }
   }
 
   &:focus,
@@ -58,7 +62,11 @@ address {
 
   > p,
   a {
-    font-size: 17px;
+    font-size: 16px;
+
+    @include tablet {
+      font-size: 17px;
+    }
   }
 
   &:focus,

@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Przechowywanie",
+    "description": "Oferujemy usługowe przechowywanie owoców i warzyw w wysokiej klasy komorach przechowalniczych, w kontrolowanej atmosferze (temperatura, wilgotność względna, skład atmosfery przechowalniczej).",
+    "img": "./src/images/photos/apples-horizontal1.jpg",
+    "alt": "Przechowywanie jabłek"
+  },
+  {
+    "type": "Sortowanie",
+    "description": "Mamy możliwość sortowania wybranych owoców i warzyw pod względem wielkości, wagi, koloru oraz jakości, korzystając z wodnego rozładunku, hydropróżniowej napełniarka oraz systemu 26 kanałów wodnych, dzięki którym możliwy jest podział jabłek na wybrane kategorie.",
+    "img": "./src/images/photos/apples-horizontal2.jpg",
+    "alt": "Sortowanie jabłek"
+  },
+  {
+    "type": "Pakowanie",
+    "description": "Dostępne opakowania: worki foliowe, opakowania kartonowe (bushel), skrzynki drewniane, skrzynki plastikowe, skrzyniopalety.",
+    "img": "./src/images/photos/apples-horizontal1.jpg",
+    "alt": "Pakowanie jabłek"
+  },
+  {
+    "type": "Transport",
+    "description": "Oferujemy transport owoców i warzyw pojazdami typu chłodnia, z możliwością utrzymania stałej temperatury we wskazanym zakresie.",
+    "img": "./src/images/photos/apples-horizontal2.jpg",
+    "alt": "Transport jabłek"
+  }
+]

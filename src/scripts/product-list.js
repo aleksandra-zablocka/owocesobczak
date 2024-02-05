@@ -8,9 +8,9 @@ fetch("./src/datasource/apples.json")
       listItem.classList.add("products__item");
 
       listItem.innerHTML = `
-        <figure class="product__figure">
+        <figure class="products__figure">
           <img class="products__image" src="${apple.img}" alt="${apple.alt}" /> 
-          <figcaption class="product__figcaption">${apple.name}</figcaption>
+          <figcaption class="products__figcaption">${apple.name}</figcaption>
         </figure>
       `;
 
