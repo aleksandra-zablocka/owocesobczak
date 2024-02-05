@@ -992,11 +992,11 @@ address:focus, address:hover {
   padding: 15px;
   padding-left: 25px;
   border: none;
+  text-align: center;
 }
 .products__table th {
   background-color: var(--green2);
   color: var(--white);
-  text-align: left;
 }
 .products__table tr:nth-child(even) {
   background-color: var(--green1a);
