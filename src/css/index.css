@@ -120,16 +120,6 @@ figcaption {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 767px) {
-  p,
-  ul,
-  li,
-  div,
-  a,
-  figcaption {
-    font-size: 16px;
-  }
-}
 
 .container {
   width: 100%;
@@ -322,6 +312,96 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.mobileContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+
+.mobile-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  gap: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.mobileCloseBtn {
+  color: var(--green3);
+  position: absolute;
+  top: 15px;
+  right: 33px;
+  font-size: 25px;
+}
+.mobileCloseBtn:hover, .mobileCloseBtn:focus {
+  cursor: pointer;
+}
+
+.mobileNavigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.mobileNavigation__item {
+  text-transform: uppercase;
+  font-size: 22px;
+  display: inline-block;
+  min-width: 87px;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: var(--green4);
+  color: var(--green3);
+  -webkit-transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
+  transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
+  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
+}
+.mobileNavigation__item:focus, .mobileNavigation__item:hover {
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+  color: var(--white);
+  background-color: var(--green3);
 }
 
 .logo {
@@ -1677,6 +1757,7 @@ address:focus, address:hover {
 }
 
 .contact-form {
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
   display: -webkit-box;
@@ -1695,6 +1776,16 @@ address:focus, address:hover {
   gap: 20px;
   position: relative;
 }
+.contact-form > p {
+  max-width: 700px;
+  padding: 0 20px;
+  text-align: justify;
+}
+@media screen and (min-width: 1199px) {
+  .contact-form > p {
+    max-width: 900px;
+  }
+}
 .contact-form::before {
   content: "";
   position: absolute;
@@ -1702,9 +1793,19 @@ address:focus, address:hover {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 600px;
+  width: 300px;
   height: 2px;
   background-color: var(--green1);
+}
+@media screen and (min-width: 768px) {
+  .contact-form::before {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .contact-form::before {
+    width: 900px;
+  }
 }
 
 .form-container .form-group {
@@ -1726,8 +1827,7 @@ address:focus, address:hover {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
-  width: 400px;
+  max-width: 350px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -1735,13 +1835,21 @@ address:focus, address:hover {
   margin-top: 5px;
   resize: none;
 }
+@media screen and (min-width: 768px) {
+  .form-group input,
+  .form-group textarea {
+    width: 400px;
+  }
+}
 
 .form-group textarea {
   height: 150px;
 }
 
 form {
-  width: 500px;
+  width: 320px;
+  width: 80vw;
+  max-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1760,4 +1868,9 @@ form {
   padding: 20px;
   border-radius: 10px;
   margin: 20px;
+}
+@media screen and (min-width: 768px) {
+  form {
+    width: 500px;
+  }
 }/*# sourceMappingURL=index.css.map */
