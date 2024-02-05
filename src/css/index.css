@@ -516,7 +516,6 @@ address:focus, address:hover {
 }
 
 .hero-container {
-  max-width: 700px;
   padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,6 +540,7 @@ address:focus, address:hover {
 .hero-container p {
   margin-top: 10px;
   margin-bottom: 20px;
+  max-width: 700px;
 }
 @media screen and (min-width: 1199px) {
   .hero-container p {
@@ -552,7 +552,6 @@ address:focus, address:hover {
 }
 
 .offer-container {
-  max-width: 700px;
   padding-top: 60px;
   padding-bottom: 10px;
   display: -webkit-box;
@@ -575,6 +574,18 @@ address:focus, address:hover {
 .offer-container > p {
   margin: 30px;
   text-align: center;
+  max-width: 700px;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .offer-container > p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .offer-container > p {
+    font-size: 20px;
+  }
 }
 
 .offer__figures {
@@ -684,6 +695,17 @@ address:focus, address:hover {
 }
 .talk-to-us p {
   text-align: center;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .talk-to-us p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .talk-to-us p {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .talk-to-us {
@@ -692,7 +714,6 @@ address:focus, address:hover {
 }
 
 .talk-to-us-container {
-  max-width: 700px;
   padding-top: 80px;
   padding-bottom: 50px;
   display: -webkit-box;
