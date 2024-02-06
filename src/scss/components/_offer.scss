@@ -41,11 +41,10 @@
   color: var(--green4);
   border-radius: 8px;
   overflow: hidden;
-  // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
 
   th,
   td {
-    padding: 15px;
+    padding: 10px 20px;
     border: none;
     text-align: center;
   }
@@ -59,11 +58,8 @@
     background-color: var(--green1a);
   }
 
-  tr:hover {
+  tbody > tr:hover {
     background-color: var(--green1b);
-  }
-
-  tr:hover {
     transform: scale(1.015);
     transition: transform 0.2s ease;
   }

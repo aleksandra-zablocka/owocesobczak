@@ -1090,7 +1090,7 @@ address:focus, address:hover {
 }
 .products__table th,
 .products__table td {
-  padding: 15px;
+  padding: 10px 20px;
   border: none;
   text-align: center;
 }
@@ -1101,10 +1101,8 @@ address:focus, address:hover {
 .products__table tr:nth-child(even) {
   background-color: var(--green1a);
 }
-.products__table tr:hover {
+.products__table tbody > tr:hover {
   background-color: var(--green1b);
-}
-.products__table tr:hover {
   -webkit-transform: scale(1.015);
           transform: scale(1.015);
   -webkit-transition: -webkit-transform 0.2s ease;
