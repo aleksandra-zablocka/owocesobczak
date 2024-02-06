@@ -314,15 +314,14 @@ header {
   }
 }
 
-.mobileContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 100px;
+.mobile-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .mobile-modal {
@@ -335,36 +334,36 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 20px;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 10px;
   position: fixed;
-  gap: 20px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 9999;
 }
+@media screen and (min-width: 1199px) {
+  .mobile-modal {
+    display: none;
+  }
+}
 
-.mobileCloseBtn {
+.mobile-close-btn {
   color: var(--green3);
   position: absolute;
   top: 15px;
   right: 33px;
   font-size: 25px;
 }
-.mobileCloseBtn:hover, .mobileCloseBtn:focus {
+.mobile-close-btn:hover, .mobile-close-btn:focus {
   cursor: pointer;
 }
 
-.mobileNavigation__list {
+.mobile-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,19 +374,24 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50vh;
+}
+@media screen and (min-width: 768px) {
+  .mobile-nav__list {
+    gap: 20px;
+  }
 }
 
-.mobileNavigation__item {
+.mobile-nav__item {
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 25px;
   display: inline-block;
-  min-width: 87px;
+  width: 250px;
   text-align: center;
-  padding: 10px 10px;
+  padding: 20px 10px;
   border-radius: 10px;
   font-weight: 500;
   color: var(--green4);
@@ -397,7 +401,13 @@ header {
   transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease;
   transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease, -webkit-filter 0.3s ease;
 }
-.mobileNavigation__item:focus, .mobileNavigation__item:hover {
+@media screen and (min-width: 768px) {
+  .mobile-nav__item {
+    font-size: 30px;
+    width: 280px;
+  }
+}
+.mobile-nav__item:focus, .mobile-nav__item:hover {
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   color: var(--white);
@@ -1016,7 +1026,7 @@ address:focus, address:hover {
 }
 
 .description-container {
-  padding-top: 90px;
+  padding-top: 110px;
   padding-bottom: 40px;
   max-width: 900px;
   display: -webkit-box;
@@ -1066,6 +1076,9 @@ address:focus, address:hover {
   margin: 30px auto;
   margin-bottom: 70px;
   overflow-x: auto;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+  border-radius: 10px;
 }
 
 .products__table {
@@ -1074,13 +1087,10 @@ address:focus, address:hover {
   color: var(--green4);
   border-radius: 8px;
   overflow: hidden;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
 }
 .products__table th,
 .products__table td {
   padding: 15px;
-  padding-left: 25px;
   border: none;
   text-align: center;
 }
@@ -1499,13 +1509,13 @@ address:focus, address:hover {
   }
 }
 
-.closeBtn {
+.close-btn {
   position: absolute;
   top: 5px;
   right: 13px;
   font-size: 25px;
 }
-.closeBtn:hover, .closeBtn:focus {
+.close-btn:hover, .close-btn:focus {
   cursor: pointer;
 }
 
@@ -1565,7 +1575,7 @@ address:focus, address:hover {
   }
 }
 .service-modal .service-description {
-  padding: 10px;
+  padding: 20px;
   max-width: 450px;
 }
 .service-modal > img {
@@ -1584,13 +1594,13 @@ address:focus, address:hover {
   }
 }
 
-.closeBtn {
+.close-btn {
   position: absolute;
   top: 5px;
   right: 13px;
   font-size: 25px;
 }
-.closeBtn:hover, .closeBtn:focus {
+.close-btn:hover, .close-btn:focus {
   cursor: pointer;
 }
 

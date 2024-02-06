@@ -30,7 +30,7 @@ function showModalService(service) {
   serviceModal.classList.add("service-modal");
 
   serviceModal.innerHTML = `
-   <span class="closeBtn">&times;</span>
+   <span class="close-btn">&times;</span>
        <h3 class="service-title">${service.type}</h3>
        <div class="service-description">
        <p>${service.description}</p>
@@ -50,7 +50,7 @@ function showModalService(service) {
   }
 
   serviceBackdrop.addEventListener("click", (event) => {
-    if (event.target === serviceBackdrop || event.target.classList.contains("closeBtn")) {
+    if (event.target === serviceBackdrop || event.target.classList.contains("close-btn")) {
       closeModal();
     }
   });

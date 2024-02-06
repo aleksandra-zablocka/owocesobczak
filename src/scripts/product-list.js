@@ -30,7 +30,7 @@ function showModal(apple) {
   appleModal.classList.add("apple-modal");
 
   appleModal.innerHTML = `
-   <span class="closeBtn">&times;</span>
+   <span class="close-btn">&times;</span>
        <h3 class="apple-title">${apple.name}</h3>
        <div class="apple-description">
        <p><b>Kształt:</b> ${apple.shape}</p>
@@ -53,7 +53,7 @@ function showModal(apple) {
   }
 
   appleBackdrop.addEventListener("click", (event) => {
-    if (event.target === appleBackdrop || event.target.classList.contains("closeBtn")) {
+    if (event.target === appleBackdrop || event.target.classList.contains("close-btn")) {
       closeModal();
     }
   });

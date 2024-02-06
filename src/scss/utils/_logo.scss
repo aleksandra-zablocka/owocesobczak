@@ -11,13 +11,11 @@
 
   &:focus .logo__details > p,
   &:hover .logo__details > p {
-    // color: var(--green3);
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   }
 
   &:focus .logo__icon,
   &:hover .logo__icon {
-    // fill: var(--green3);
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   }
 }

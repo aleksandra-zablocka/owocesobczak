@@ -5,16 +5,15 @@ mobileButton.addEventListener("click", () => {
 });
 
 function showMobileModal() {
-  // const mobileBackdrop = document.createElement("div");
-  // mobileBackdrop.classList.add("mobile-backdrop");
+  document.body.classList.add("modal-open");
 
   const mobileModal = document.createElement("div");
   mobileModal.classList.add("mobile-modal");
 
   mobileModal.innerHTML = `
-    <span class="mobileCloseBtn">&times;</span>
+    <span class="mobile-close-btn">&times;</span>
 
-    <div class="mobileContainer">
+    <div class="mobile-container">
         <div class="logo">
           <a class="logo__details" href="./index.html"
             ><svg class="logo__icon" width="40px" height="40px">
@@ -23,27 +22,28 @@ function showMobileModal() {
             <p>Owoce Sobczak</p></a
           >
         </div>
-
+        </div>
     <nav>
-    <ul class="mobileNavigation__list">
+    <ul class="mobile-nav__list">
       <li>
-        <a class="mobileNavigation__item" href="./index.html">Strona główna</a>
+        <a class="mobile-nav__item" href="./index.html">Strona główna</a>
       </li>
       <li>
-        <a class="mobileNavigation__item" href="./o-nas.html">O nas</a>
+        <a class="mobile-nav__item" href="./o-nas.html">O nas</a>
       </li>
       <li>
-        <a class="mobileNavigation__item" href="./oferta.html">Oferta</a>
+        <a class="mobile-nav__item" href="./oferta.html">Oferta</a>
       </li>
       <li>
-        <a class="mobileNavigation__item" href="./kontakt.html">Kontakt</a>
+        <a class="mobile-nav__item" href="./kontakt.html">Kontakt</a>
       </li>
     </ul>
   </nav>
-  </div>
+  
        `;
 
   function closeMobileModal() {
+    document.body.classList.remove("modal-open");
     document.body.removeChild(mobileModal);
     document.removeEventListener("keydown", handleKeyPress);
   }
@@ -55,7 +55,7 @@ function showMobileModal() {
   }
 
   mobileModal.addEventListener("click", (event) => {
-    if (event.target.classList.contains("mobileCloseBtn")) {
+    if (event.target.classList.contains("mobile-close-btn")) {
       closeMobileModal();
     }
   });
