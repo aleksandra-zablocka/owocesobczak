@@ -1570,15 +1570,16 @@ address:focus, address:hover {
 }
 .service-modal > img {
   border-radius: 10px;
-  width: 200px;
-  height: 200px;
+  width: 95%;
+  max-width: 400px;
+  max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .service-modal > img {
-    width: 300px;
+    width: 460px;
     height: 300px;
   }
 }
@@ -1827,7 +1828,7 @@ address:focus, address:hover {
 
 .form-group input,
 .form-group textarea {
-  max-width: 350px;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;

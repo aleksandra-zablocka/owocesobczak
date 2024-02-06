@@ -1,10 +1,10 @@
 const mobileButton = document.querySelector(".mobile__button");
 
 mobileButton.addEventListener("click", () => {
-  showModal();
+  showMobileModal();
 });
 
-function showModal() {
+function showMobileModal() {
   // const mobileBackdrop = document.createElement("div");
   // mobileBackdrop.classList.add("mobile-backdrop");
 
@@ -43,7 +43,7 @@ function showModal() {
   </div>
        `;
 
-  function closeModal() {
+  function closeMobileModal() {
     document.body.removeChild(mobileModal);
     document.removeEventListener("keydown", handleKeyPress);
   }
@@ -56,7 +56,7 @@ function showModal() {
 
   mobileModal.addEventListener("click", (event) => {
     if (event.target.classList.contains("mobileCloseBtn")) {
-      closeModal();
+      closeMobileModal();
     }
   });
 
