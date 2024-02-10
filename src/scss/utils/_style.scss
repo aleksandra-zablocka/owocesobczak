@@ -50,12 +50,12 @@ div,
 a,
 figcaption {
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--green4);
 
-  @include tablet {
-    font-size: 18px;
-  }
+  // @include tablet {
+  //   font-size: 18px;
+  // }
 
   @include desktop {
     font-size: 20px;
