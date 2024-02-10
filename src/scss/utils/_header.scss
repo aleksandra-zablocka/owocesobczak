@@ -94,6 +94,7 @@ header {
   position: fixed;
   top: 20px;
   left: 20px;
+  width: 100%;
 }
 
 body.modal-open {
@@ -124,8 +125,8 @@ body.modal-open {
 .mobile-close-btn {
   color: var(--green3);
   position: absolute;
-  top: 15px;
-  right: 33px;
+  top: 0;
+  right: 50px;
   font-size: 25px;
 
   &:hover,

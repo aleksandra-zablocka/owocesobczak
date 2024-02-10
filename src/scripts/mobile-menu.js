@@ -11,9 +11,9 @@ function showMobileModal() {
   mobileModal.classList.add("mobile-modal");
 
   mobileModal.innerHTML = `
-    <span class="mobile-close-btn">&times;</span>
-
-    <div class="mobile-container">
+  
+  <div class="mobile-container">
+  <span class="mobile-close-btn">&times;</span>
         <div class="logo">
           <a class="logo__details" href="./index.html"
             ><svg class="logo__icon" width="40px" height="40px">

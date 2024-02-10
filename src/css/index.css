@@ -120,16 +120,6 @@ figcaption {
     font-size: 20px;
   }
 }
-@media only screen and (max-device-width: 812px) and (orientation: landscape) {
-  p,
-  ul,
-  li,
-  div,
-  a,
-  figcaption {
-    font-size: 16px;
-  }
-}
 
 .container {
   width: 100%;
@@ -328,6 +318,7 @@ header {
   position: fixed;
   top: 20px;
   left: 20px;
+  width: 100%;
 }
 
 body.modal-open {
@@ -366,8 +357,8 @@ body.modal-open {
 .mobile-close-btn {
   color: var(--green3);
   position: absolute;
-  top: 15px;
-  right: 33px;
+  top: 0;
+  right: 50px;
   font-size: 25px;
 }
 .mobile-close-btn:hover, .mobile-close-btn:focus {
@@ -956,11 +947,13 @@ address:focus, address:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   gap: 40px;
-  position: relative;
 }
 @media screen and (min-width: 768px) {
+  .about-us__description {
+    padding-bottom: 30px;
+  }
   .about-us__description > p {
     margin-bottom: 10px;
   }
@@ -968,23 +961,6 @@ address:focus, address:hover {
 @media screen and (min-width: 1199px) {
   .about-us__description {
     padding-top: 20px;
-    width: 100%;
-  }
-}
-.about-us__description::after {
-  content: "";
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 70%;
-  height: 2px;
-  background-color: var(--green1);
-}
-@media screen and (min-width: 768px) {
-  .about-us__description::after {
-    bottom: 40px;
     width: 100%;
   }
 }
@@ -1006,6 +982,25 @@ address:focus, address:hover {
       -ms-flex-align: center;
           align-items: center;
   gap: 25px;
+  position: relative;
+  margin-bottom: 60px;
+}
+.about-us__images::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+  height: 2px;
+  background-color: var(--green1);
+}
+@media screen and (min-width: 768px) {
+  .about-us__images::after {
+    bottom: -60px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-us__images {
