@@ -14,8 +14,8 @@ $desktop: 1199px;
   }
 }
 
-// @mixin iphone-landscape {
-//   @media only screen and (max-device-width: 812px) and (orientation: landscape) {
-//     @content;
-//   }
-// }
+@mixin landscape {
+  @media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+    @content;
+  }
+}

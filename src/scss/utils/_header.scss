@@ -1,10 +1,7 @@
 header {
   font-family: "Poppins", sans-serif;
-  background-color: var(--green1a);
-  background-color: var(--grey);
   background-color: var(--white);
   color: var(--green2);
-  border-bottom: var(--green1a) 1px solid;
   border-bottom: var(--green1b) 1px solid;
   position: fixed;
   top: 0;
@@ -90,32 +87,25 @@ header {
   }
 }
 
-.mobile-container {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 100%;
-}
-
-body.modal-open {
-  overflow: hidden;
-}
-
 .mobile-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  // align-items: center;
+  // padding: 20px;
   width: 100vw;
   height: 100vh;
   background-color: var(--white);
   border-radius: 10px;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   z-index: 9999;
-  overflow-y: auto;
+  overflow: auto;
+
+  // > header {
+  //   position: fixed;
+  // }
 
   @include desktop {
     display: none;
@@ -125,26 +115,51 @@ body.modal-open {
 .mobile-close-btn {
   color: var(--green3);
   position: absolute;
-  top: 0;
-  right: 50px;
+  top: 22px;
+  right: 33px;
   font-size: 25px;
+  transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
 
   &:hover,
   &:focus {
     cursor: pointer;
+    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
   }
 }
 
 .mobile-nav__list {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 50vh;
+  // z-index: 9999;
+  // margin: 80px auto;
+  // // margin-bottom: 80px;
+  // padding-bottom: 40px;
+  // padding-top: 80px;
+
+  @include landscape {
+    margin-top: 100px;
+    padding-bottom: 20px;
+  }
 
   @include tablet {
     gap: 20px;
   }
+}
+
+.mobile-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .mobile-nav__item {
@@ -156,8 +171,8 @@ body.modal-open {
   padding: 20px 10px;
   border-radius: 10px;
   font-weight: 500;
-  color: var(--green4);
   color: var(--green3);
+  background-color: var(--white);
   transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease;
 
   @include tablet {
