@@ -100,28 +100,12 @@ figcaption {
   font-size: 16px;
   color: var(--green4);
 }
-@media screen and (min-width: 1199px) {
-  p,
-  ul,
-  li,
-  div,
-  a,
-  figcaption {
-    font-size: 20px;
-  }
-}
 
 .container {
-  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
 }
 @media screen and (min-width: 1199px) {
   .container {
@@ -211,19 +195,10 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 50px;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 @media screen and (min-width: 768px) {
   .header-container {
     height: 80px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .header-container {
-    max-width: 1200px;
   }
 }
 
@@ -1630,9 +1605,16 @@ address:focus, address:hover {
   padding-bottom: 50px;
 }
 .contact__description > p {
+  max-width: 700px;
   padding: 0 20px;
   text-align: justify;
 }
+@media screen and (min-width: 1199px) {
+  .contact__description > p {
+    max-width: 900px;
+  }
+}
+
 .write-us-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1657,6 +1639,7 @@ address:focus, address:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    max-width: 700px;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -1664,6 +1647,7 @@ address:focus, address:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    max-width: 900px;
   }
 }
 
@@ -1779,6 +1763,7 @@ address:focus, address:hover {
   position: relative;
 }
 .contact-form > p {
+  max-width: 700px;
   padding: 0 20px;
   text-align: justify;
 }

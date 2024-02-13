@@ -21,17 +21,8 @@ header {
   justify-content: space-between;
   gap: 50px;
 
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
   @include tablet {
     height: 80px;
-  }
-
-  @include desktop {
-    max-width: 1200px;
   }
 }
 
