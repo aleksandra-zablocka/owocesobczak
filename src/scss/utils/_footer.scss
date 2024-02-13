@@ -31,6 +31,7 @@ address {
 
   > a {
     font-size: 16px;
+    text-align: center;
 
     @include tablet {
       font-size: 17px;
