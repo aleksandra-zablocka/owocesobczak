@@ -7,7 +7,7 @@
     <title>Owoce Sobczak - Kontakt</title>
     <link rel="icon" href="./src/images/icons/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./src/css/indexmin.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="./src/scss/index.scss" type="text/css" /> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +16,6 @@
     />
     <script src="./src/scripts/mobile-menu.js" defer></script>
     <script src="https://unpkg.com/@botpoison/browser" async></script>
-    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js" async></script>
-    <script src="https://unpkg.com/@botpoison/browser" async></script> -->
   </head>
   <body>
     <header>
@@ -102,25 +100,6 @@
 
         <div class="contact-form">
           <p>Zachęcamy również do kontaktu poprzez formularz kontaktowy:</p>
-          <!-- <form action="#" method="POST">
-            <div class="form-group">
-              <label for="name">Imię i nazwisko</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Nr telefonu</label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Treść wiadomości</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button class="button--dark" type="submit">Wyślij</button>
-          </form> -->
 
           <form
             action="https://submit-form.com/rECAUc9zm"
@@ -128,8 +107,8 @@
             data-botpoison-public-key="pk_263b4c45-4174-4c6c-bf3e-fdc0a685cc48"
             target="_blank"
           >
+            <input type="checkbox" name="newsletter" style="display: none" tabindex="-1" autocomplete="off" />
             <div class="form-group">
-              <input type="checkbox" name="newsletter" style="display: none" tabindex="-1" autocomplete="off" />
               <label for="name">Imię i nazwisko</label>
               <input type="text" id="name" name="name" required />
             </div>
@@ -168,11 +147,11 @@
         <div class="footer__address">
           <address>
             <a
-              href="https://goo.gl/maps/nuaCnTMoTbVcBPQF8"
+              href="https://maps.app.goo.gl/efGGZ7TE2KPK3WJc8"
               class="address__street"
               target="_blank"
               rel="noreferrer noopener"
-              >Ul. Przykładowa 1 <br />00-000 Przykład</a
+              >Piwonin 11<br />08-443 Piwonin</a
             >
           </address>
         </div>
@@ -186,23 +165,5 @@
         </div>
       </div>
     </footer>
-    <!-- <script>
-      const botpoison = new Botpoison({
-        publicKey: "pk_263b4c45-4174-4c6c-bf3e-fdc0a685cc48",
-      });
-      botpoison.challenge().then(({ solution }) => {
-        axios
-          .post("https://submit-form.com/rECAUc9zm", {
-            message: "Hello, World",
-            _botpoison: solution,
-          })
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (response) {
-            console.error(response);
-          });
-      });
-    </script> -->
   </body>
 </html>
