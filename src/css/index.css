@@ -1587,7 +1587,7 @@ address:focus, address:hover {
 .close-btn {
   position: absolute;
   top: 5px;
-  right: 13px;
+  right: 15px;
   font-size: 25px;
 }
 .close-btn:hover, .close-btn:focus {

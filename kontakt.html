@@ -15,6 +15,9 @@
       rel="stylesheet"
     />
     <script src="./src/scripts/mobile-menu.js" defer></script>
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js" async></script>
+    <script src="https://unpkg.com/@botpoison/browser" async></script> -->
   </head>
   <body>
     <header>
@@ -119,8 +122,14 @@
             <button class="button--dark" type="submit">Wyślij</button>
           </form> -->
 
-          <form action="https://submit-form.com/rECAUc9zm">
+          <form
+            action="https://submit-form.com/rECAUc9zm"
+            method="POST"
+            data-botpoison-public-key="pk_263b4c45-4174-4c6c-bf3e-fdc0a685cc48"
+            target="_blank"
+          >
             <div class="form-group">
+              <input type="checkbox" name="newsletter" style="display: none" tabindex="-1" autocomplete="off" />
               <label for="name">Imię i nazwisko</label>
               <input type="text" id="name" name="name" required />
             </div>
@@ -177,5 +186,23 @@
         </div>
       </div>
     </footer>
+    <!-- <script>
+      const botpoison = new Botpoison({
+        publicKey: "pk_263b4c45-4174-4c6c-bf3e-fdc0a685cc48",
+      });
+      botpoison.challenge().then(({ solution }) => {
+        axios
+          .post("https://submit-form.com/rECAUc9zm", {
+            message: "Hello, World",
+            _botpoison: solution,
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (response) {
+            console.error(response);
+          });
+      });
+    </script> -->
   </body>
 </html>
