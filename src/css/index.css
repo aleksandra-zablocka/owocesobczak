@@ -311,8 +311,8 @@ header {
 .mobile-close-btn {
   color: var(--green3);
   position: absolute;
-  top: 22px;
-  right: 33px;
+  top: 21px;
+  right: 25px;
   font-size: 25px;
   -webkit-transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
   transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
@@ -348,7 +348,8 @@ header {
 @media only screen and (max-device-width: 1199px) and (orientation: landscape) {
   .mobile-nav__list {
     margin-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 220px;
+    padding-bottom: 120px;
   }
 }
 @media screen and (min-width: 768px) {

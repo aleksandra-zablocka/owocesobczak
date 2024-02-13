@@ -115,8 +115,8 @@ header {
 .mobile-close-btn {
   color: var(--green3);
   position: absolute;
-  top: 22px;
-  right: 33px;
+  top: 21px;
+  right: 25px;
   font-size: 25px;
   transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
 
@@ -144,7 +144,9 @@ header {
 
   @include landscape {
     margin-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 220px;
+    padding-bottom: 120px;
+    // margin-bottom: 100px;
   }
 
   @include tablet {
