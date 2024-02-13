@@ -30,12 +30,7 @@ address {
   transition: filter 0.3s ease, border 0.3s ease;
 
   > a {
-    font-size: 16px;
     text-align: center;
-
-    @include tablet {
-      font-size: 17px;
-    }
   }
 
   &:focus,
@@ -54,15 +49,6 @@ address {
 .footer__email,
 .footer__phone {
   transition: filter 0.3s ease, border 0.3s ease;
-
-  > p,
-  a {
-    font-size: 16px;
-
-    @include tablet {
-      font-size: 17px;
-    }
-  }
 
   &:focus,
   &:hover {

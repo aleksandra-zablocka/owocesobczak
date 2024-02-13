@@ -60,8 +60,4 @@ figcaption {
   @include desktop {
     font-size: 20px;
   }
-
-  @include landscape {
-    font-size: 16px;
-  }
 }

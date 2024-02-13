@@ -7,9 +7,9 @@
   color: var(--green4);
   transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease, border 0.3s ease;
 
-  // @include tablet {
-  //   font-size: 18px;
-  // }
+  @include tablet {
+    font-size: 18px;
+  }
 
   @include desktop {
     padding: 15px 25px;
@@ -34,9 +34,9 @@
   color: var(--white);
   transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease, border 0.3s ease;
 
-  // @include tablet {
-  //   font-size: 18px;
-  // }
+  @include tablet {
+    font-size: 18px;
+  }
 
   @include desktop {
     padding: 15px 25px;
