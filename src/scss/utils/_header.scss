@@ -88,11 +88,11 @@ header {
 }
 
 .mobile-modal {
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
-  // align-items: center;
-  // padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   width: 100vw;
   height: 100vh;
   background-color: var(--white);
@@ -102,10 +102,6 @@ header {
   left: 0;
   z-index: 9999;
   overflow: auto;
-
-  // > header {
-  //   position: fixed;
-  // }
 
   @include desktop {
     display: none;
@@ -128,10 +124,11 @@ header {
 }
 
 .mobile-nav__list {
-  position: absolute;
-  top: 50vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50vh;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,10 +140,10 @@ header {
   // padding-top: 80px;
 
   @include landscape {
-    margin-top: 100px;
+    margin-top: 220px;
     padding-top: 120px;
-    padding-bottom: 120px;
-    // margin-bottom: 100px;
+    // padding-bottom: 120px;
+    margin-bottom: 80px;
   }
 
   @include tablet {

@@ -53,15 +53,15 @@ figcaption {
   font-size: 16px;
   color: var(--green4);
 
-  // @include tablet {
-  //   font-size: 18px;
-  // }
+  @include tablet {
+    font-size: 18px;
+  }
 
-  // @include desktop {
-  //   font-size: 20px;
-  // }
+  @include desktop {
+    font-size: 20px;
+  }
 
-  // @include iphone-landscape {
-  //   font-size: 16px;
-  // }
+  @include landscape {
+    font-size: 16px;
+  }
 }

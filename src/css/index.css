@@ -100,6 +100,36 @@ figcaption {
   font-size: 16px;
   color: var(--green4);
 }
+@media screen and (min-width: 768px) {
+  p,
+  ul,
+  li,
+  div,
+  a,
+  figcaption {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  p,
+  ul,
+  li,
+  div,
+  a,
+  figcaption {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  p,
+  ul,
+  li,
+  div,
+  a,
+  figcaption {
+    font-size: 16px;
+  }
+}
 
 .container {
   width: 100%;
@@ -282,6 +312,20 @@ header {
 }
 
 .mobile-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
   width: 100vw;
   height: 100vh;
   background-color: var(--white);
@@ -316,11 +360,7 @@ header {
 }
 
 .mobile-nav__list {
-  position: absolute;
-  top: 50vh;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,9 +377,9 @@ header {
 }
 @media only screen and (max-device-width: 1199px) and (orientation: landscape) {
   .mobile-nav__list {
-    margin-top: 100px;
+    margin-top: 220px;
     padding-top: 120px;
-    padding-bottom: 120px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 768px) {
