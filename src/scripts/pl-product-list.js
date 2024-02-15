@@ -1,6 +1,6 @@
 const productList = document.querySelector(".products__list");
 
-fetch("./src/datasource/apples.json")
+fetch("./src/datasource/pl-apples.json")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((apple) => {

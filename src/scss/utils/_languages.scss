@@ -1,0 +1,42 @@
+.languages {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.lang__icon {
+  width: 30px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.163);
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.languages--mobile {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.lang__icon--mobile {
+  width: 30px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.163);
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}

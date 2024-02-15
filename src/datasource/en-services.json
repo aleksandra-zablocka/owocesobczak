@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Storage",
+    "description": "We offer service storage of fruits and vegetables in high-class storage chambers, in a controlled atmosphere (temperature, relative humidity, storage atmosphere composition).",
+    "img": "../src/images/photos/apples-horizontal1.jpg",
+    "alt": "Apple Storage"
+  },
+  {
+    "type": "Sorting",
+    "description": "We have the ability to sort selected fruits and vegetables by size, weight, color, and quality, using water unloading, hydro vacuum filler, and a 26-channel water system, which allows apples to be divided into selected categories.",
+    "img": "../src/images/photos/apples-horizontal2.jpg",
+    "alt": "Apple Sorting"
+  },
+  {
+    "type": "Packaging",
+    "description": "Available packaging: foil bags, cardboard packaging (bushel), wooden crates, plastic crates, pallet boxes.",
+    "img": "../src/images/photos/apples-horizontal1.jpg",
+    "alt": "Apple Packaging"
+  },
+  {
+    "type": "Transport",
+    "description": "We offer transport of fruits and vegetables using refrigerated vehicles, with the ability to maintain a constant temperature within the specified range.",
+    "img": "../src/images/photos/apples-horizontal2.jpg",
+    "alt": "Apple Transport"
+  }
+]

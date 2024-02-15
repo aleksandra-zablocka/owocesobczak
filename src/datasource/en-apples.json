@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Red Pinova",
+    "shape": "large, round-conical",
+    "peel": "orange-red, blurred blush",
+    "inside": "light yellow, moderately juicy, sweet-tart",
+    "caliber": "from 65+ to 95+",
+    "img": "../src/images/apples/gala.jpg",
+    "alt": "Red Pinova apple"
+  },
+  {
+    "name": "Jonaprince",
+    "shape": "large",
+    "peel": "dark red blush, creamy skin with red-orange blush",
+    "inside": "sweet-tart, crisp, juicy",
+    "caliber": "from 65+ to 95+",
+    "img": "../src/images/apples/grannysmith.jpg",
+    "alt": "Jonaprince apple"
+  },
+  {
+    "name": "Gala Select",
+    "shape": "medium, round or round-conical",
+    "peel": "smooth, greenish-yellow, dark blush",
+    "inside": "creamy, fine-grained, juicy, crisp, sweet",
+    "caliber": "from 65+ to 95+",
+    "img": "../src/images/apples/pinklady.jpg",
+    "alt": "Gala Select apple"
+  },
+  {
+    "name": "Gala Schniga",
+    "shape": "small or medium, round-conical",
+    "peel": "golden-yellow, dark red blush",
+    "inside": "creamy, sweet, crisp, juicy",
+    "caliber": "from 65+ to 95+",
+    "img": "../src/images/apples/champion.jpg",
+    "alt": "Gala Schniga apple"
+  }
+]

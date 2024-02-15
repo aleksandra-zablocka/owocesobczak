@@ -1,6 +1,6 @@
 const serviceList = document.querySelector(".services__list");
 
-fetch("./src/datasource/services.json")
+fetch("./src/datasource/pl-services.json")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((service) => {

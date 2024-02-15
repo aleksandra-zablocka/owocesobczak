@@ -53,10 +53,10 @@
   justify-content: center;
   gap: 20px;
 
-  @include tablet {
-    gap: 15px;
-    flex-direction: row;
-  }
+  // @include tablet {
+  //   gap: 15px;
+  //   flex-direction: row;
+  // }
 
   > figcaption {
     display: flex;
@@ -64,16 +64,16 @@
     justify-content: center;
     align-items: center;
 
-    @include tablet {
-      justify-content: left;
-      align-items: start;
-    }
+    // @include tablet {
+    //   justify-content: left;
+    //   align-items: start;
+    // }
   }
 
   > img {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: center;
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
@@ -81,6 +81,11 @@
     @include tablet {
       width: 150px;
       height: 150px;
+    }
+
+    @include desktop {
+      width: 180px;
+      height: 180px;
     }
   }
 }

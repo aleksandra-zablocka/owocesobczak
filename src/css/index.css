@@ -574,6 +574,58 @@ address:focus, address:hover {
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
 }
 
+.languages {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+@media screen and (min-width: 1199px) {
+  .languages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.lang__icon {
+  width: 30px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.163);
+}
+.lang__icon:focus, .lang__icon:hover {
+  cursor: pointer;
+}
+
+.languages--mobile {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.lang__icon--mobile {
+  width: 30px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.163);
+}
+.lang__icon--mobile:focus, .lang__icon--mobile:hover {
+  cursor: pointer;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1478,6 +1530,13 @@ address:focus, address:hover {
     height: 600px;
   }
 }
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .apple-modal {
+    max-height: 400px;
+    height: 95vh;
+    gap: 10px;
+  }
+}
 .apple-modal > .apple-title {
   text-align: center;
   font-size: 30px;
@@ -1487,9 +1546,19 @@ address:focus, address:hover {
     font-size: 50px;
   }
 }
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .apple-modal > .apple-title {
+    font-size: 30px;
+  }
+}
 .apple-modal .apple-description {
   padding: 10px;
   max-width: 450px;
+}
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .apple-modal .apple-description > p {
+    font-size: 15px;
+  }
 }
 .apple-modal > img {
   width: 200px;
@@ -1501,6 +1570,12 @@ address:focus, address:hover {
   .apple-modal > img {
     width: 300px;
     height: 300px;
+  }
+}
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .apple-modal > img {
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -1561,6 +1636,13 @@ address:focus, address:hover {
     width: 700px;
   }
 }
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .service-modal {
+    max-height: 400px;
+    height: 95vh;
+    gap: 0;
+  }
+}
 .service-modal > .service-title {
   font-size: 30px;
 }
@@ -1569,9 +1651,25 @@ address:focus, address:hover {
     font-size: 50px;
   }
 }
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .service-modal > .service-title {
+    font-size: 30px;
+  }
+}
 .service-modal .service-description {
   padding: 20px;
   max-width: 450px;
+}
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .service-modal .service-description {
+    padding: 10px;
+  }
+}
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .service-modal .service-description > p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }
 .service-modal > img {
   border-radius: 10px;
@@ -1586,6 +1684,12 @@ address:focus, address:hover {
   .service-modal > img {
     width: 460px;
     height: 300px;
+  }
+}
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .service-modal > img {
+    width: 220px;
+    height: 150px;
   }
 }
 
@@ -1687,15 +1791,6 @@ address:focus, address:hover {
           justify-content: center;
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
-  .worker {
-    gap: 15px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
 .worker > figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1711,20 +1806,10 @@ address:focus, address:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .worker > figcaption {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
-}
 .worker > img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1736,6 +1821,12 @@ address:focus, address:hover {
   .worker > img {
     width: 150px;
     height: 150px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .worker > img {
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -1907,6 +1998,7 @@ form {
 
 .thank-you-container {
   padding: 30px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1920,28 +2012,24 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  gap: 20px;
   background: rgba(255, 253, 253, 0.777);
-  width: 80%;
+  min-width: 250px;
+  width: 50%;
+  max-width: 500px;
   border-radius: 10px;
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
   .thank-you-container {
-    gap: 70px;
+    gap: 30px;
   }
 }
-.thank-you-container h1,
 .thank-you-container h3,
+.thank-you-container h4,
 .thank-you-container p {
   text-align: center;
 }
-.thank-you-container p {
-  margin-top: 10px;
-  margin-bottom: 20px;
+.thank-you-container h4 {
+  padding-bottom: 20px;
   max-width: 700px;
-}
-@media screen and (min-width: 1199px) {
-  .thank-you-container p {
-    margin: 30px;
-  }
 }/*# sourceMappingURL=index.css.map */

@@ -11,3 +11,5 @@ dodac przekierowanie na strone O nas po kliknieciu buttona
 seo - dodać opis w head strony
 
 dodac modal po wejsciu w karte jablka
+
+przejrzec wszystkie img czy maja alt w poprawnym jezyku
