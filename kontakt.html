@@ -105,12 +105,33 @@
             action="https://submit-form.com/rECAUc9zm"
             method="POST"
             data-botpoison-public-key="pk_263b4c45-4174-4c6c-bf3e-fdc0a685cc48"
-            target="_blank"
           >
+            <!-- <input type="hidden" name="_feedback.whitelabel" value="true" />
+            <input type="hidden" name="_feedback.success.title" value="Dziękujemy za wypełnienie formularza" />
+            <input type="hidden" name="_feedback.success.message" value="Powrót na stronę główną" />
+            <input
+              type="hidden"
+              name="_feedback.error.title"
+              value="Coś poszło nie tak, nie udało się wysłać formularza"
+            />
+            <input type="hidden" name="_feedback.error.message" value="Powrót na stronę główną" /> -->
+
+            <!-- <input type="hidden" name="_redirect" value="http://127.0.0.1:5501/dziekujemy.html" /> -->
+            <input
+              type="hidden"
+              name="_redirect"
+              value="https://aleksandra-zablocka.github.io/owocesobczak/dziekujemy.html"
+            />
+
+            <input type="hidden" name="_email.subject" value="Nowa wiadomość" />
+            <input type="hidden" name="_email.from" value="OWOCE SOBCZAK" />
+            <input type="hidden" name="_email.template.title" value="false" />
+            <input type="hidden" name="_email.template.footer" value="false" />
+
             <input type="checkbox" name="newsletter" style="display: none" tabindex="-1" autocomplete="off" />
             <div class="form-group">
               <label for="name">Imię i nazwisko</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="nazwa" required />
             </div>
             <div class="form-group">
               <label for="email">Email</label>
@@ -118,11 +139,11 @@
             </div>
             <div class="form-group">
               <label for="phone">Nr telefonu</label>
-              <input type="tel" id="phone" name="phone" required />
+              <input type="tel" id="phone" name="telefon" required />
             </div>
             <div class="form-group">
               <label for="message">Treść wiadomości</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
+              <textarea id="message" name="wiadomosc" rows="5" required></textarea>
             </div>
             <button class="button--dark" type="submit">Wyślij</button>
           </form>

@@ -52,7 +52,7 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 55px;
   color: var(--green2);
   font-weight: 900;
   line-height: 1.1;
@@ -86,7 +86,12 @@ h2 {
 
 h3 {
   color: var(--red1);
-  font-size: 50px;
+  font-size: 40px;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 50px;
+  }
 }
 
 h4 {
@@ -1873,5 +1878,70 @@ form {
 @media screen and (min-width: 768px) {
   form {
     width: 500px;
+  }
+}
+
+.thank-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.5))), url("../images/photos/apples-horizontal1.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.5)), url("../images/photos/apples-horizontal1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+}
+
+.thank-you-container {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  background: rgba(255, 253, 253, 0.777);
+  width: 80%;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1199px) {
+  .thank-you-container {
+    gap: 70px;
+  }
+}
+.thank-you-container h1,
+.thank-you-container h3,
+.thank-you-container p {
+  text-align: center;
+}
+.thank-you-container p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+@media screen and (min-width: 1199px) {
+  .thank-you-container p {
+    margin: 30px;
   }
 }/*# sourceMappingURL=index.css.map */
