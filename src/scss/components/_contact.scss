@@ -72,16 +72,18 @@
 
   > img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    // width: 200px;
+    // height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     object-position: center;
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
 
-    @include tablet {
-      width: 150px;
-      height: 150px;
-    }
+    // @include tablet {
+    //   width: 150px;
+    //   height: 150px;
+    // }
 
     @include desktop {
       width: 180px;

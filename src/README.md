@@ -13,3 +13,5 @@ seo - dodać opis w head strony
 dodac modal po wejsciu w karte jablka
 
 przejrzec wszystkie img czy maja alt w poprawnym jezyku
+
+formularz - czy stworzyc nowy dla wersji ang i innych jezykow?

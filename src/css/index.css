@@ -604,7 +604,7 @@ address:focus, address:hover {
 .languages--mobile {
   position: absolute;
   top: 30px;
-  right: 80px;
+  right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,13 +614,25 @@ address:focus, address:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
+  gap: 5px;
+}
+@media screen and (min-width: 768px) {
+  .languages--mobile {
+    right: 80px;
+    gap: 15px;
+  }
 }
 
 .lang__icon--mobile {
-  width: 30px;
-  height: 20px;
+  width: 21px;
+  height: 14px;
   border: 1px solid rgba(0, 0, 0, 0.163);
+}
+@media screen and (min-width: 768px) {
+  .lang__icon--mobile {
+    width: 30px;
+    height: 20px;
+  }
 }
 .lang__icon--mobile:focus, .lang__icon--mobile:hover {
   cursor: pointer;
@@ -811,6 +823,11 @@ address:focus, address:hover {
   max-width: 600px;
   width: 100%;
 }
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .offer__figure img {
+    max-width: 350px;
+  }
+}
 @media screen and (min-width: 768px) {
   .offer__figure img {
     width: 400px;
@@ -902,14 +919,8 @@ address:focus, address:hover {
   fill: rgb(173, 173, 173);
   border-radius: 50%;
   background-color: rgb(231, 231, 231);
-  width: 200px;
-  height: 200px;
-}
-@media screen and (min-width: 768px) {
-  .team__icon {
-    width: 150px;
-    height: 150px;
-  }
+  width: 150px;
+  height: 150px;
 }
 
 .contact-us {
@@ -1272,8 +1283,8 @@ address:focus, address:hover {
 }
 
 .products__figure {
-  width: 320px;
-  height: 320px;
+  width: 250px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1306,8 +1317,8 @@ address:focus, address:hover {
 }
 
 .products__image {
-  width: 320px;
-  height: 280px;
+  width: 250px;
+  height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1808,20 +1819,14 @@ address:focus, address:hover {
 }
 .worker > img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-}
-@media screen and (min-width: 768px) {
-  .worker > img {
-    width: 150px;
-    height: 150px;
-  }
 }
 @media screen and (min-width: 1199px) {
   .worker > img {

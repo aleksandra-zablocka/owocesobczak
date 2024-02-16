@@ -17,25 +17,30 @@ function showMobileModal() {
     <div class="logo">
       <a class="logo__details" href="./index.html"
         ><svg class="logo__icon" width="40px" height="40px">
-          <use href="./src/images/icons/icons.svg#logo"></use>
+          <use href="../src/images/icons/icons.svg#logo"></use>
         </svg>
         <p>Owoce Sobczak</p></a
       >
+    </div>
+    <div class="languages--mobile">
+          <a href="../index.html"> <img class="lang__icon--mobile" src="../src/images/languages/poland.gif" /></a>
+          <a href="./index.html"> <img class="lang__icon--mobile" src="../src/images/languages/uk.gif" /></a>
+          <a href="./de/index.html"> <img class="lang__icon--mobile" src="../src/images/languages/germany.gif" /></a>
     </div>
     </header>
     <div>
     <ul class="mobile-nav__list">
       <li>
-        <a class="mobile-nav__item" href="./index.html">Strona główna</a>
+        <a class="mobile-nav__item" href="./index.html">Home</a>
       </li>
       <li>
-        <a class="mobile-nav__item" href="./o-nas.html">O nas</a>
+        <a class="mobile-nav__item" href="./about-us.html">About us</a>
       </li>
       <li>
-        <a class="mobile-nav__item" href="./oferta.html">Oferta</a>
+        <a class="mobile-nav__item" href="./offer.html">Offer</a>
       </li>
       <li>
-        <a class="mobile-nav__item" href="./kontakt.html">Kontakt</a>
+        <a class="mobile-nav__item" href="./contact.html">Contact</a>
       </li>
     </ul>
     </div>

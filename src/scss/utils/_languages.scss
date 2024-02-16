@@ -23,17 +23,27 @@
 .languages--mobile {
   position: absolute;
   top: 30px;
-  right: 80px;
+  right: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
+
+  @include tablet {
+    right: 80px;
+    gap: 15px;
+  }
 }
 
 .lang__icon--mobile {
-  width: 30px;
-  height: 20px;
+  width: 21px;
+  height: 14px;
   border: 1px solid rgba(0, 0, 0, 0.163);
+
+  @include tablet {
+    width: 30px;
+    height: 20px;
+  }
 
   &:focus,
   &:hover {

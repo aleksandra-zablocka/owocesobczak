@@ -137,6 +137,10 @@
     max-width: 600px;
     width: 100%;
 
+    @include landscape {
+      max-width: 350px;
+    }
+
     @include tablet {
       width: 400px;
     }
@@ -201,13 +205,13 @@
   fill: rgb(173, 173, 173);
   border-radius: 50%;
   background-color: rgb(231, 231, 231);
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 
-  @include tablet {
-    width: 150px;
-    height: 150px;
-  }
+  // @include tablet {
+  //   width: 150px;
+  //   height: 150px;
+  // }
 }
 
 .contact-us {
