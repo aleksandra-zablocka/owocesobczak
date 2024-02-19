@@ -134,8 +134,16 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   margin-bottom: 30px;
+
+  @include landscape {
+    gap: 30px;
+  }
+
+  @include tablet {
+    gap: 30px;
+  }
 
   @include desktop {
     gap: 50px;
