@@ -1316,13 +1316,23 @@ address:focus, address:hover {
 }
 
 .table-container {
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 70px;
   overflow-x: auto;
   border-radius: 10px;
   padding-top: 50px;
   position: relative;
+}
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .table-container {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .table-container {
+    max-width: 900px;
+  }
 }
 @media screen and (min-width: 1199px) {
   .table-container {
