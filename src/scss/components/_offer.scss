@@ -1,7 +1,6 @@
 .description-container {
   padding-top: 110px;
   padding-bottom: 40px;
-  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,8 +10,11 @@
 
   > p {
     text-align: center;
+    max-width: 900px;
   }
 }
+
+// to będzie można wyrzucić jak Witkowi się spodoba nowy layout
 
 .description-products {
   display: flex;
@@ -26,70 +28,9 @@
   gap: 10px;
 }
 
-.table-container {
-  max-width: 100%;
-  margin: 30px auto;
-  margin-bottom: 70px;
-  overflow-x: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
-  border-radius: 10px;
-}
-
-.products__table {
-  width: 100%;
-  border-collapse: collapse;
-  color: var(--green4);
-  border-radius: 8px;
-  overflow: hidden;
-
-  th,
-  td {
-    padding: 10px 20px;
-    border: none;
-    text-align: center;
-  }
-
-  th {
-    background-color: var(--green2);
-    color: var(--white);
-  }
-
-  tr:nth-child(even) {
-    background-color: var(--green1a);
-  }
-
-  tbody > tr:hover {
-    background-color: var(--green1b);
-    transform: scale(1.015);
-    transition: transform 0.2s ease;
-  }
-}
-
-.separator {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
-    height: 2px;
-    background-color: var(--red1a);
-
-    @include tablet {
-      width: 500px;
-    }
-
-    @include desktop {
-      width: 900px;
-    }
-  }
-}
+// dotąd
 
 .products-container {
-  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,6 +79,7 @@
   margin-bottom: 30px;
 
   @include landscape {
+    max-width: 700px;
     gap: 30px;
   }
 
@@ -146,7 +88,7 @@
   }
 
   @include desktop {
-    gap: 50px;
+    gap: 40px;
     margin-bottom: 50px;
   }
 }
@@ -211,6 +153,95 @@
   align-items: center;
 }
 
+.table-container {
+  // max-width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  overflow-x: auto;
+  // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+  border-radius: 10px;
+  // margin-top: 40px;
+  padding-top: 50px;
+  position: relative;
+
+  @include desktop {
+    padding-top: 60px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 2px;
+    background-color: var(--green1);
+
+    @include tablet {
+      width: 530px;
+    }
+
+    @include desktop {
+      width: 680px;
+    }
+  }
+}
+
+.products__table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--green4);
+  border-radius: 8px;
+  overflow: hidden;
+
+  th,
+  td {
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+  }
+
+  th {
+    background-color: var(--green2);
+    color: var(--white);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--green1a);
+  }
+
+  tbody > tr:hover {
+    background-color: var(--green1b);
+    transform: scale(1.015);
+    transition: transform 0.2s ease;
+  }
+}
+
+.separator {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 2px;
+    background-color: var(--red1a);
+
+    @include tablet {
+      width: 500px;
+    }
+
+    @include desktop {
+      width: 900px;
+    }
+  }
+}
+
 .services-container {
   display: flex;
   flex-direction: column;
@@ -244,11 +275,92 @@
 
 .services {
   padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+// .services__list {
+//   width: 80%;
+//   list-style: none;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 30px;
+//   margin-bottom: 30px;
+
+//   @include desktop {
+//     gap: 50px;
+//     margin-bottom: 50px;
+//   }
+// }
+
+// .services__item {
+//   filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+//   justify-content: center;
+// }
+
+// .services__image {
+//   width: 100%;
+//   height: 160px;
+//   border-top-right-radius: 7px;
+//   border-top-left-radius: 7px;
+
+//   @include tablet {
+//     height: 210px;
+//   }
+
+//   @include desktop {
+//     height: 245px;
+//   }
+// }
+
+// .services__figure {
+//   // width: 320px;
+//   width: 280px;
+//   height: 200px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 7px;
+//   transition: filter 0.3s ease;
+
+//   @include tablet {
+//     // width: 400px;
+//     width: 350px;
+//     height: 250px;
+//   }
+
+//   @include desktop {
+//     width: 400px;
+//     height: 285px;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+//     cursor: pointer;
+//     transform: scale(1.015);
+//     transition: transform 0.2s ease;
+//   }
+// }
+
+// .services__figcaption {
+//   width: 100%;
+//   height: 40px;
+//   background-color: var(--white);
+//   background-color: var(--green2);
+//   color: var(--white);
+//   border-bottom-right-radius: 7px;
+//   border-bottom-left-radius: 7px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .services__list {
   width: 80%;
@@ -257,11 +369,20 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   margin-bottom: 30px;
 
+  @include landscape {
+    max-width: 700px;
+    gap: 30px;
+  }
+
+  @include tablet {
+    gap: 30px;
+  }
+
   @include desktop {
-    gap: 50px;
+    gap: 40px;
     margin-bottom: 50px;
   }
 }
@@ -271,25 +392,11 @@
   justify-content: center;
 }
 
-.services__image {
-  width: 100%;
-  height: 160px;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-
-  @include tablet {
-    height: 210px;
-  }
-
-  @include desktop {
-    height: 245px;
-  }
-}
-
 .services__figure {
   // width: 320px;
-  width: 280px;
-  height: 200px;
+  // height: 320px;
+  width: 250px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,15 +404,9 @@
   border-radius: 7px;
   transition: filter 0.3s ease;
 
-  @include tablet {
-    // width: 400px;
-    width: 350px;
-    height: 250px;
-  }
-
   @include desktop {
-    width: 400px;
-    height: 285px;
+    width: 320px;
+    height: 320px;
   }
 
   &:hover,
@@ -314,6 +415,22 @@
     cursor: pointer;
     transform: scale(1.015);
     transition: transform 0.2s ease;
+  }
+}
+
+.services__image {
+  // width: 320px;
+  // height: 280px;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+
+  @include desktop {
+    width: 320px;
+    height: 280px;
   }
 }
 
