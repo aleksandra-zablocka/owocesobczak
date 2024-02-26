@@ -45,22 +45,7 @@ function showMobileModal() {
     </ul>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-       `;
+  `;
 
   function closeMobileModal() {
     document.body.classList.remove("modal-open");
@@ -70,7 +55,7 @@ function showMobileModal() {
 
   function handleKeyPress(event) {
     if (event.key === "Escape") {
-      closeModal();
+      closeMobileModal();
     }
   }
 
