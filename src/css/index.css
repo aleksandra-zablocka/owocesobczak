@@ -442,6 +442,10 @@ body.modal-open {
       -ms-flex-align: center;
           align-items: center;
 }
+.logo--footer {
+  background-color: white;
+  border-radius: 50%;
+}
 
 .footer-img {
   width: 120px;
