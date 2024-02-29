@@ -688,20 +688,10 @@ body.modal-open {
   margin-bottom: 20px;
   max-width: 700px;
 }
-@media screen and (min-width: 1199px) {
-  .hero-container p {
-    margin: 30px;
-  }
-}
 .hero-container h3 {
   color: var(--red2);
-  width: 70%;
+  line-height: 1.2;
   text-align: center;
-}
-@media screen and (min-width: 1199px) {
-  .hero-container h3 {
-    width: 60%;
-  }
 }
 
 .offer-container {
