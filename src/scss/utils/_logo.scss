@@ -2,36 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &__icon {
-    fill: var(--green4);
-    fill: var(--green3);
-    transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
-  }
-
-  &:focus .logo__details > p,
-  &:hover .logo__details > p {
-    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-  }
-
-  &:focus .logo__icon,
-  &:hover .logo__icon {
-    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-  }
 }
 
-.logo__details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.footer-img {
+  width: 120px;
+  height: 120px;
 
-  > p {
-    text-transform: uppercase;
-    color: var(--green4);
-    color: var(--green3);
-    font-weight: 500;
-    font-size: 18px;
-    transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease;
+  @include tablet {
+    width: 60px;
+    height: 60px;
   }
 }

@@ -1,6 +1,7 @@
 [
   {
     "name": "Red Pinova",
+    "description": "Późnozimowa odmiana jabłoni",
     "shape": "duże, kulisto-stożkowe",
     "peel": "pomarańczowo czerwona, rozmyty rumieniec",
     "inside": "jasnożółty, średnio soczysty, słodko-kwaskowaty",
@@ -10,6 +11,7 @@
   },
   {
     "name": "Jonaprince",
+    "description": "Wczesnozimowa odmiana jabłoni",
     "shape": "duże",
     "peel": "ciemnoczerwony rumieniec, kremowa skórka z czerwono-pomarańczowym rumieńcem",
     "inside": "słodko-kwaśny, kruchy, soczysty",
@@ -19,18 +21,20 @@
   },
   {
     "name": "Gala Selekt",
+    "description": "Wczesnozimowa odmiana jabłoni",
     "shape": "średnie, kuliste lub kulisto-stożkowate",
     "peel": "gładka, zielonożółta, ciemny rumieniec",
-    "inside": "kremowy, drobnoziarnisty, soczysty, kruchy, słodki",
+    "inside": "kremowy, drobnoziarnisty, soczysty, kruchy, słodki, bardzo smaczny",
     "caliber": "od 65+ do 95+",
     "img": "./src/images/apples/pinklady.jpg",
     "alt": "jabłko Gala Selekt"
   },
   {
     "name": "Gala Schniga",
+    "description": "Wczesnozimowa odmiana jabłoni",
     "shape": "małe lub średnie, kulisto-stożkowe",
-    "peel": "złocistożółta, ciemnoczerwony rumieniec",
-    "inside": "kremowy, słodki, kruchy, soczysty",
+    "peel": "gładka, złocistożółta, ciemnoczerwony rumieniec",
+    "inside": "kremowy, słodki, kruchy, soczysty i smaczny",
     "caliber": "od 65+ do 95+",
     "img": "./src/images/apples/champion.jpg",
     "alt": "jabłko Gala Schniga"

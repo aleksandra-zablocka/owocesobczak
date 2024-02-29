@@ -114,7 +114,7 @@
 .contact-form {
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,5 +201,44 @@ form {
 
   @include tablet {
     width: 500px;
+  }
+}
+
+.contact-info {
+  text-align: center;
+  margin: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 2px;
+    background-color: var(--green1);
+
+    @include tablet {
+      width: 600px;
+    }
+
+    @include desktop {
+      width: 900px;
+    }
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  img {
+    display: none;
+
+    @include desktop {
+      width: 200px;
+      height: 200px;
+      margin-top: 40px;
+    }
   }
 }

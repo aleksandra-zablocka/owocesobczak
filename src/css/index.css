@@ -86,9 +86,14 @@ h2 {
 
 h3 {
   color: var(--red1);
-  font-size: 40px;
+  font-size: 30px;
 }
 @media screen and (min-width: 768px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1199px) {
   h3 {
     font-size: 50px;
   }
@@ -437,45 +442,16 @@ body.modal-open {
       -ms-flex-align: center;
           align-items: center;
 }
-.logo__icon {
-  fill: var(--green4);
-  fill: var(--green3);
-  -webkit-transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: fill 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
-  transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-}
-.logo:focus .logo__details > p, .logo:hover .logo__details > p {
-  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-}
-.logo:focus .logo__icon, .logo:hover .logo__icon {
-  -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-          filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-}
 
-.logo__details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
+.footer-img {
+  width: 120px;
+  height: 120px;
 }
-.logo__details > p {
-  text-transform: uppercase;
-  color: var(--green4);
-  color: var(--green3);
-  font-weight: 500;
-  font-size: 18px;
-  -webkit-transition: color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: color 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
-  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease;
-  transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
+@media screen and (min-width: 768px) {
+  .footer-img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .page-footer {
@@ -485,8 +461,8 @@ body.modal-open {
 }
 
 .page-footer-container {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,6 +481,8 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .page-footer-container {
+    padding-top: 50px;
+    padding-bottom: 60px;
     height: 120px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -515,8 +493,7 @@ body.modal-open {
             justify-content: space-between;
   }
 }
-
-address {
+.page-footer-container address {
   font-style: normal;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,10 +513,10 @@ address {
   transition: filter 0.3s ease, border 0.3s ease;
   transition: filter 0.3s ease, border 0.3s ease, -webkit-filter 0.3s ease;
 }
-address > a {
+.page-footer-container address > a {
   text-align: center;
 }
-address:focus, address:hover {
+.page-footer-container address:focus, .page-footer-container address:hover {
   -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
           filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
 }
@@ -716,8 +693,15 @@ address:focus, address:hover {
     margin: 30px;
   }
 }
-.hero-container span {
+.hero-container h3 {
   color: var(--red2);
+  width: 70%;
+  text-align: center;
+}
+@media screen and (min-width: 1199px) {
+  .hero-container h3 {
+    width: 60%;
+  }
 }
 
 .offer-container {
@@ -1619,7 +1603,7 @@ address:focus, address:hover {
   padding: 20px;
   width: 90%;
   max-width: 520px;
-  height: 500px;
+  height: 550px;
   background-color: #fff;
   border-radius: 10px;
   position: fixed;
@@ -1667,21 +1651,23 @@ address:focus, address:hover {
   }
 }
 .apple-modal > img {
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media screen and (min-width: 768px) {
-  .apple-modal > img {
-    width: 300px;
-    height: 300px;
-  }
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media only screen and (max-device-width: 1199px) and (orientation: landscape) {
   .apple-modal > img {
-    width: 180px;
-    height: 180px;
+    width: 35%;
+    height: 35%;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .apple-modal > img {
+    width: 90%;
+    height: 90%;
   }
 }
 
@@ -1956,7 +1942,7 @@ address:focus, address:hover {
 .contact-form {
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2069,6 +2055,46 @@ form {
 @media screen and (min-width: 768px) {
   form {
     width: 500px;
+  }
+}
+
+.contact-info {
+  text-align: center;
+  margin: 40px;
+  position: relative;
+}
+.contact-info::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 300px;
+  height: 2px;
+  background-color: var(--green1);
+}
+@media screen and (min-width: 768px) {
+  .contact-info::before {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .contact-info::before {
+    width: 900px;
+  }
+}
+.contact-info address {
+  font-style: normal;
+}
+.contact-info img {
+  display: none;
+}
+@media screen and (min-width: 1199px) {
+  .contact-info img {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
   }
 }
 

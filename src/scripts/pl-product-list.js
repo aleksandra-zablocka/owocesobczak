@@ -32,6 +32,7 @@ function showModal(apple) {
   appleModal.innerHTML = `
    <span class="close-btn">&times;</span>
        <h3 class="apple-title">${apple.name}</h3>
+       <h4>${apple.description}</h4>
        <div class="apple-description">
        <p><b>Kształt:</b> ${apple.shape}</p>
        <p><b>Skórka:</b> ${apple.peel}</p>

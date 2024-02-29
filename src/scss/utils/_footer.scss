@@ -5,8 +5,8 @@
 }
 
 .page-footer-container {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -15,27 +15,29 @@
   gap: 40px;
 
   @include tablet {
+    padding-top: 50px;
+    padding-bottom: 60px;
     height: 120px;
     flex-direction: row;
     justify-content: space-between;
   }
-}
 
-address {
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: filter 0.3s ease, border 0.3s ease;
+  address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.3s ease, border 0.3s ease;
 
-  > a {
-    text-align: center;
-  }
+    > a {
+      text-align: center;
+    }
 
-  &:focus,
-  &:hover {
-    filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+    &:focus,
+    &:hover {
+      filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
+    }
   }
 }
 

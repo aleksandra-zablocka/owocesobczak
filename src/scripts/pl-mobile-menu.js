@@ -14,14 +14,14 @@ function showMobileModal() {
   <header>
   <div class="header-container container">
   <span class="mobile-close-btn">&times;</span>
-    <div class="logo">
-      <a class="logo__details" href="./index.html"
-        ><svg class="logo__icon" width="40px" height="40px">
-          <use href="./src/images/icons/icons.svg#logo"></use>
-        </svg>
-        <p>Owoce Sobczak</p></a
-      >
-    </div>
+  <a class="logo" href="./index.html"
+  ><img
+    src="./src/images/logo/LOGO_SB_KOLOR_1280X1280.png"
+    width="60px"
+    height="60px"
+    alt="logo Owoce Sobczak"
+  />
+</a>
     <div class="languages--mobile">
           <a href="./index.html"> <img class="lang__icon--mobile" src="./src/images/languages/poland.gif" /></a>
           <a href="./en/index.html"> <img class="lang__icon--mobile" src="./src/images/languages/uk.gif" /></a>

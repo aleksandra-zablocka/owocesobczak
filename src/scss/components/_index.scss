@@ -46,8 +46,14 @@
     }
   }
 
-  span {
+  h3 {
     color: var(--red2);
+    width: 70%;
+    text-align: center;
+
+    @include desktop {
+      width: 60%;
+    }
   }
 }
 

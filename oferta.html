@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Owoce Sobczak - Produkty i usługi</title>
-    <link rel="icon" href="./src/images/icons/logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="./src/images/logo/LOGO_SB_KOLOR_1280X1280.png" type="image/svg+xml" />
     <link rel="stylesheet" href="./src/css/indexmin.css" type="text/css" />
     <!-- <link rel="stylesheet" href="./src/scss/index.scss" type="text/css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,14 +21,14 @@
   <body>
     <header>
       <div class="header-container container">
-        <div class="logo">
-          <a class="logo__details" href="./index.html"
-            ><svg class="logo__icon" width="40px" height="40px">
-              <use href="./src/images/icons/icons.svg#logo"></use>
-            </svg>
-            <p>Owoce Sobczak</p></a
-          >
-        </div>
+        <a class="logo" href="./index.html"
+          ><img
+            src="./src/images/logo/LOGO_SB_KOLOR_1280X1280.png"
+            width="60px"
+            height="60px"
+            alt="logo Owoce Sobczak"
+          />
+        </a>
         <div class="navigation">
           <div class="mobile-navigation">
             <button class="mobile__button" type="button">
@@ -68,7 +68,7 @@
       <section class="description">
         <div class="description-container container">
           <h2>Oferta</h2>
-          <p>Zapraszamy do zapoznania się z naszą ofertą</p>
+          <p>Zapraszamy do zapoznania się z naszą ofertą:</p>
           <div class="products-container container">
             <div class="products" id="products">
               <ul class="products__list"></ul>
@@ -128,18 +128,69 @@
             <ul class="services__list"></ul>
           </div>
         </div>
+        <div class="table-container">
+          <table class="products__table">
+            <thead>
+              <tr>
+                <th>Usługa</th>
+                <th>Opis</th>
+                <th>Szczegóły</th>
+                <th>Uwagi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Przechowywanie</td>
+                <td>Przechowywanie owoców i warzyw w wysokiej klasy komorach przechowalniczych</td>
+                <td>Posiadamy 3 komory gazowe - 60 ton i 1 komorę gazową - 120 ton</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sortowanie</td>
+                <td>
+                  Sortowanie wybranych owoców i warzyw pod względem wielkości (kaliber), koloru (wybarwienie) i wagi
+                  (masa)
+                </td>
+                <td>
+                  Korzystamy z wodnego rozładunku, hydro próżniowej napełniarka oraz systemu kilkunastu kanałów wodnych,
+                  dzięki którym możliwy jest podział jabłek na wybrane kategorie
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Pakowanie</td>
+                <td>Pakowanie produktów zgodnie z oczekiwaniami klientów hurtowych i detalicznych</td>
+                <td>
+                  Dostępne opakowania: worki foliowe - 1-1,5 kg, opakowania kartonowe - 13 kg, skrzynki drewniane -
+                  12-13,5 kg, skrzynki plastikowe - 14-15 kg, skrzyniopalety - 300 kg
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Transport</td>
+                <td>
+                  Transport owoców i warzyw pojazdami ciężarowymi typu chłodnia, z możliwością utrzymania stałej
+                  temperatury we wskazanym zakresie
+                </td>
+                <td>Posiadamy auto solówkę - 8 t i naczepę - 20 t</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer-container container">
-        <div class="logo">
-          <a class="logo__details" href="./index.html"
-            ><svg class="logo__icon" width="40px" height="40px">
-              <use href="./src/images/icons/icons.svg#logo"></use>
-            </svg>
-            <p>Owoce Sobczak</p></a
-          >
-        </div>
+        <a class="logo" href="./index.html"
+          ><img
+            class="footer-img"
+            src="./src/images/logo/LOGO_SB_KOLOR_1280X1280.png"
+            width="60px"
+            height="60px"
+            alt="logo Owoce Sobczak"
+          />
+        </a>
         <div class="footer__address">
           <address>
             <a
@@ -147,16 +198,16 @@
               class="address__street"
               target="_blank"
               rel="noreferrer noopener"
-              >Piwonin 11<br />08-443 Piwonin</a
+              >Piwonin 11<br />08-443 Sobienie Jeziory</a
             >
           </address>
         </div>
         <div class="footer__contact">
           <div class="footer__phone">
-            <p>Telefon: <a href="tel:+1234567890">+123 456 7890</a></p>
+            <p>Telefon: <a href="tel:+1234567890">+48 573 402 245</a></p>
           </div>
           <div class="footer__email">
-            <p>Email: <a href="mailto:info@owocesobczak.pl">info@owocesobczak.pl</a></p>
+            <p>Email: <a href="mailto:kontakt@owocesobczak.pl">kontakt@owocesobczak.pl</a></p>
           </div>
         </div>
       </div>

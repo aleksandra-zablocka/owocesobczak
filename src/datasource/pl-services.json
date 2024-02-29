@@ -1,25 +1,25 @@
 [
   {
     "type": "Przechowywanie",
-    "description": "Oferujemy usługowe przechowywanie owoców i warzyw w wysokiej klasy komorach przechowalniczych, w kontrolowanej atmosferze (temperatura, wilgotność względna, skład atmosfery przechowalniczej).",
+    "description": "Oferujemy usługowe przechowywanie owoców i warzyw w wysokiej klasy komorach przechowalniczych, w kontrolowanej atmosferze (temperatura, wilgotność względna, skład atmosfery przechowalniczej). Posiadamy 3 komory gazowe - 60 ton i 1 komorę gazową - 120 ton",
     "img": "./src/images/photos/apples-horizontal1.jpg",
     "alt": "Przechowywanie jabłek"
   },
   {
     "type": "Sortowanie",
-    "description": "Mamy możliwość sortowania wybranych owoców i warzyw pod względem wielkości, wagi, koloru oraz jakości, korzystając z wodnego rozładunku, hydropróżniowej napełniarka oraz systemu 26 kanałów wodnych, dzięki którym możliwy jest podział jabłek na wybrane kategorie.",
+    "description": "Mamy możliwość sortowania wybranych owoców i warzyw pod względem wielkości (kaliber), koloru (wybarwienie) i wagi (masa); korzystając z wodnego rozładunku, hydropróżniowej napełniarka oraz systemu kilkunastu kanałów wodnych, dzięki którym możliwy jest podział jabłek na wybrane kategorie",
     "img": "./src/images/photos/apples-horizontal2.jpg",
     "alt": "Sortowanie jabłek"
   },
   {
     "type": "Pakowanie",
-    "description": "Dostępne opakowania: worki foliowe, opakowania kartonowe (bushel), skrzynki drewniane, skrzynki plastikowe, skrzyniopalety.",
+    "description": "Możemy zapakować produkty zgodnie z oczekiwaniami klientów hurtowych i detalicznych. Dostępne opakowania: worki foliowe - 1-1,5 kg, opakowania kartonowe - 13 kg, skrzynki drewniane - 12-13,5 kg, skrzynki plastikowe - 14-15 kg, skrzyniopalety - 300 kg. Jesteśmy w stanie przygotować produkt w innych, wybranych opakowaniach",
     "img": "./src/images/photos/apples-horizontal1.jpg",
     "alt": "Pakowanie jabłek"
   },
   {
     "type": "Transport",
-    "description": "Oferujemy transport owoców i warzyw pojazdami typu chłodnia, z możliwością utrzymania stałej temperatury we wskazanym zakresie.",
+    "description": "Oferujemy transport owoców i warzyw pojazdami ciężarowymi typu chłodnia, z możliwością utrzymania stałej temperatury we wskazanym zakresie. Posiadamy auto solówkę - 8 t i naczepę - 20 t",
     "img": "./src/images/photos/apples-horizontal2.jpg",
     "alt": "Transport jabłek"
   }
