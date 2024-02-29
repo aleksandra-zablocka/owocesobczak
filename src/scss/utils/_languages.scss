@@ -22,12 +22,12 @@
 
 .languages--mobile {
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 32px;
+  right: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 
   @include landscape {
     right: 80px;
@@ -41,8 +41,10 @@
 }
 
 .lang__icon--mobile {
-  width: 21px;
-  height: 14px;
+  width: 24px;
+  height: 17px;
+  width: 30px;
+  height: 20px;
   border: 1px solid rgba(0, 0, 0, 0.163);
 
   @include landscape {
