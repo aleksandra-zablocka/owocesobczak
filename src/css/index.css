@@ -381,9 +381,9 @@ header {
 }
 @media only screen and (max-device-width: 1199px) and (orientation: landscape) {
   .mobile-nav__list {
-    margin-top: 120px;
+    margin-top: 100px;
     padding-top: 120px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -442,17 +442,38 @@ body.modal-open {
       -ms-flex-align: center;
           align-items: center;
 }
+.logo > img {
+  width: 45px;
+  height: 45px;
+}
+@media screen and (min-width: 768px) {
+  .logo > img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .logo > img {
+    width: 60px;
+    height: 60px;
+  }
+}
 .logo--footer {
   background-color: white;
   border-radius: 50%;
 }
-
-.footer-img {
-  width: 120px;
-  height: 120px;
+.logo--footer > img {
+  width: 100px;
+  height: 100px;
 }
 @media screen and (min-width: 768px) {
-  .footer-img {
+  .logo--footer > img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .logo--footer > img {
     width: 60px;
     height: 60px;
   }
@@ -486,7 +507,7 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .page-footer-container {
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     height: 120px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
