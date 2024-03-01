@@ -1122,28 +1122,6 @@ body.modal-open {
   max-width: 900px;
 }
 
-.description-products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
-.description-services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
 .products-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1639,8 +1617,7 @@ body.modal-open {
 }
 @media only screen and (max-device-width: 1199px) and (orientation: landscape) {
   .apple-modal {
-    max-height: 400px;
-    height: 95vh;
+    height: 90vh;
     gap: 10px;
   }
 }
@@ -1668,8 +1645,8 @@ body.modal-open {
   }
 }
 .apple-modal > img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-fit: contain;
@@ -1677,8 +1654,14 @@ body.modal-open {
 }
 @media only screen and (max-device-width: 1199px) and (orientation: landscape) {
   .apple-modal > img {
-    width: 35%;
-    height: 35%;
+    width: 65%;
+    height: 65%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .apple-modal > img {
+    width: 80%;
+    height: 80%;
   }
 }
 @media screen and (min-width: 1199px) {
