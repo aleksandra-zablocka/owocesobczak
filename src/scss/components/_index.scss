@@ -137,7 +137,9 @@
   img {
     border-radius: 5px;
     max-width: 600px;
+    height: 300px;
     width: 100%;
+    object-fit: cover;
 
     @include landscape {
       max-width: 350px;

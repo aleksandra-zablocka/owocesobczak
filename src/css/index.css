@@ -834,7 +834,10 @@ body.modal-open {
 .offer__figure img {
   border-radius: 5px;
   max-width: 600px;
+  height: 300px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media only screen and (max-device-width: 1199px) and (orientation: landscape) {
   .offer__figure img {
@@ -1654,8 +1657,6 @@ body.modal-open {
 .apple-modal > img {
   width: 60%;
   height: 60%;
-  -o-object-fit: cover;
-     object-fit: cover;
   -o-object-fit: contain;
      object-fit: contain;
 }
