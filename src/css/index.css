@@ -834,7 +834,7 @@ body.modal-open {
 .offer__figure img {
   border-radius: 5px;
   max-width: 600px;
-  height: 300px;
+  max-height: 300px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -847,6 +847,7 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .offer__figure img {
     width: 400px;
+    height: 300px;
   }
 }
 
@@ -998,9 +999,6 @@ body.modal-open {
       -ms-flex-align: center;
           align-items: center;
 }
-.about-us-container > p {
-  margin-bottom: 40px;
-}
 
 .about-us__description {
   padding-top: 30px;
@@ -1018,10 +1016,11 @@ body.modal-open {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 40px;
-  gap: 40px;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .about-us__description {
+    gap: 40px;
     padding-bottom: 30px;
   }
   .about-us__description > p {
@@ -1041,17 +1040,22 @@ body.modal-open {
 }
 
 .about-us__images {
+  margin-top: 10px;
   width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 25px;
+  gap: 35px;
   position: relative;
   margin-bottom: 60px;
 }
@@ -1069,17 +1073,37 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .about-us__images::after {
     bottom: -60px;
-    width: 100%;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .about-us__images::after {
+    width: 60%;
+    max-width: 800px;
+  }
+}
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+  .about-us__images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 @media screen and (min-width: 768px) {
   .about-us__images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 50px;
   }
 }
 .about-us__images > img {
   width: 220px;
+  width: 300px;
   height: 220px;
+  height: 300px;
   border-radius: 30px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1608,7 +1632,6 @@ body.modal-open {
   padding: 20px;
   width: 90%;
   max-width: 520px;
-  height: 550px;
   background-color: #fff;
   border-radius: 10px;
   position: fixed;
@@ -1664,12 +1687,6 @@ body.modal-open {
   .apple-modal > img {
     width: 65%;
     height: 65%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .apple-modal > img {
-    width: 80%;
-    height: 80%;
   }
 }
 @media screen and (min-width: 1199px) {

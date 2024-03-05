@@ -382,7 +382,8 @@
   padding: 20px;
   width: 90%;
   max-width: 520px;
-  height: 550px;
+  // height: 550px;
+  // height: 70vh;
   background-color: #fff;
   border-radius: 10px;
   position: fixed;
@@ -439,10 +440,10 @@
       height: 65%;
     }
 
-    @include tablet {
-      width: 80%;
-      height: 80%;
-    }
+    // @include tablet {
+    //   width: 80%;
+    //   height: 80%;
+    // }
 
     @include desktop {
       width: 90%;
@@ -472,6 +473,85 @@
   left: 0;
   z-index: 9999;
 }
+
+// .service-modal {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   padding: 20px;
+//   width: 90%;
+//   max-width: 520px;
+//   background-color: #fff;
+//   border-radius: 10px;
+//   position: fixed;
+//   gap: 20px;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 9999;
+
+//   @include tablet {
+//     width: 700px;
+//   }
+
+//   @include desktop {
+//     width: 700px;
+//   }
+
+//   @include landscape {
+//     max-height: 400px;
+//     height: 95vh;
+//     gap: 0;
+//   }
+
+//   > .service-title {
+//     font-size: 30px;
+
+//     @include tablet {
+//       font-size: 50px;
+//     }
+
+//     @include landscape {
+//       font-size: 30px;
+//     }
+//   }
+
+//   .service-description {
+//     padding: 20px;
+//     max-width: 450px;
+
+//     @include landscape {
+//       padding: 10px;
+//     }
+
+//     > p {
+//       @include landscape {
+//         font-size: 15px;
+//         margin-bottom: 10px;
+//       }
+//     }
+//   }
+
+//   > img {
+//     border-radius: 10px;
+//     width: 95%;
+//     max-width: 400px;
+//     max-height: 200px;
+//     object-fit: cover;
+//     margin-bottom: 20px;
+
+//     @include tablet {
+//       width: 460px;
+//       height: 300px;
+//     }
+
+//     @include landscape {
+//       width: 220px;
+//       height: 150px;
+//     }
+//   }
+// }
 
 .service-modal {
   display: flex;
