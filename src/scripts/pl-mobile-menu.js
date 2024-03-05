@@ -17,8 +17,6 @@ function showMobileModal() {
   <a class="logo" href="./index.html"
   ><img
     src="./src/images/logo/LOGO_SB_KOLOR_1280X1280.png"
-    width="60px"
-    height="60px"
     alt="logo Owoce Sobczak"
   />
 </a>

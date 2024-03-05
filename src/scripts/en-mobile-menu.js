@@ -17,9 +17,7 @@ function showMobileModal() {
   <a class="logo" href="./index.html"
   ><img
     src="../src/images/logo/LOGO_SB_KOLOR_1280X1280.png"
-    width="60px"
-    height="60px"
-    alt="logo Owoce Sobczak"
+    alt="Owoce Sobczak logo"
   />
 </a>
     <div class="languages--mobile">
@@ -28,6 +26,7 @@ function showMobileModal() {
           <a href="./de/index.html"> <img class="lang__icon--mobile" src="../src/images/languages/germany.gif" /></a>
     </div>
     </header>
+    
     <div>
     <ul class="mobile-nav__list">
       <li>

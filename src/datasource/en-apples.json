@@ -1,6 +1,7 @@
 [
   {
     "name": "Red Pinova",
+    "description": "A late winter variety of apple tree",
     "shape": "large, round-conical",
     "peel": "orange-red, blurred blush",
     "inside": "light yellow, moderately juicy, sweet-tart",
@@ -10,6 +11,7 @@
   },
   {
     "name": "Jonaprince",
+    "description": "An early winter apple variety",
     "shape": "large",
     "peel": "dark red blush, creamy skin with red-orange blush",
     "inside": "sweet-tart, crisp, juicy",
@@ -19,6 +21,7 @@
   },
   {
     "name": "Gala Select",
+    "description": "An early winter apple variety",
     "shape": "medium, round or round-conical",
     "peel": "smooth, greenish-yellow, dark blush",
     "inside": "creamy, fine-grained, juicy, crisp, sweet",
@@ -28,6 +31,7 @@
   },
   {
     "name": "Gala Schniga",
+    "description": "An early winter apple variety",
     "shape": "small or medium, round-conical",
     "peel": "golden-yellow, dark red blush",
     "inside": "creamy, sweet, crisp, juicy",
