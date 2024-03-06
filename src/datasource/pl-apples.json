@@ -26,7 +26,7 @@
     "peel": "gładka, zielonożółta, ciemny rumieniec",
     "inside": "kremowy, drobnoziarnisty, soczysty, kruchy, słodki, bardzo smaczny",
     "caliber": "od 65+ do 95+",
-    "img": "./src/images/apples/pinklady.jpg",
+    "img": "./src/images/apples/gala-selekt.jpg",
     "alt": "jabłko Gala Selekt"
   },
   {
@@ -36,7 +36,7 @@
     "peel": "gładka, złocistożółta, ciemnoczerwony rumieniec",
     "inside": "kremowy, słodki, kruchy, soczysty i smaczny",
     "caliber": "od 65+ do 95+",
-    "img": "./src/images/apples/champion.jpg",
+    "img": "./src/images/apples/gala-schniga.jpg",
     "alt": "jabłko Gala Schniga"
   }
 ]

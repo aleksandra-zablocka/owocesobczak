@@ -26,7 +26,7 @@
     "peel": "smooth, greenish-yellow, dark blush",
     "inside": "creamy, fine-grained, juicy, crisp, sweet",
     "caliber": "from 65+ to 95+",
-    "img": "../src/images/apples/pinklady.jpg",
+    "img": "../src/images/apples/gala-selekt.jpg",
     "alt": "Gala Select apple"
   },
   {
@@ -36,7 +36,7 @@
     "peel": "golden-yellow, dark red blush",
     "inside": "creamy, sweet, crisp, juicy",
     "caliber": "from 65+ to 95+",
-    "img": "../src/images/apples/champion.jpg",
+    "img": "../src/images/apples/gala-schniga.jpg",
     "alt": "Gala Schniga apple"
   }
 ]
