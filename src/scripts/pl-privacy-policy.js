@@ -1,4 +1,4 @@
-const cookies = document.querySelector("#cookies");
+const cookies = document.querySelector(".cookies");
 
 document.addEventListener("DOMContentLoaded", function () {
   if (!localStorage.getItem("privacyPolicyAccepted")) {
