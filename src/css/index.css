@@ -666,8 +666,9 @@ body.modal-open {
           justify-content: center;
   margin-top: 60px;
   padding: 40px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/photos/hero.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/photos/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), image-set(url("../images/photos/hero-x1.jpg") 1x, url("../images/photos/hero-x2.jpg") 2x, url("../images/photos/hero-x3.jpg") 3x);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), -webkit-image-set(url("../images/photos/hero-x1.jpg") 1x, url("../images/photos/hero-x2.jpg") 2x, url("../images/photos/hero-x3.jpg") 3x);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url("../images/photos/hero-x1.jpg") 1x, url("../images/photos/hero-x2.jpg") 2x, url("../images/photos/hero-x3.jpg") 3x);
   background-position: center;
   background-size: cover;
   background-position: center;
@@ -993,6 +994,53 @@ body.modal-open {
     padding-top: 120px;
     padding-bottom: 50px;
   }
+}
+
+.cookies__content {
+  background-color: white;
+  border-top: 1px solid var(--green1b);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+@media screen and (min-width: 768px) {
+  .cookies__content {
+    padding: 20px;
+  }
+}
+.cookies__content p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .cookies__content p {
+    margin-bottom: 20px;
+  }
+}
+.cookies__content a {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--green3);
+}
+.cookies__button {
+  font-size: 12px;
+  padding: 10px 20px;
 }
 
 .about-us-container {
@@ -2229,4 +2277,25 @@ form {
 .thank-you-container h4 {
   padding-bottom: 20px;
   max-width: 700px;
+}
+
+.privacy-policy-container {
+  padding-top: 110px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.privacy-policy-container h4 {
+  margin-top: 30px;
 }/*# sourceMappingURL=index.css.map */

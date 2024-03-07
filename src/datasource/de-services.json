@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Lagerung",
+    "description": "Wir bieten die Lagerung von Obst und Gemüse in hochwertigen Lagerkammern in einer kontrollierten Atmosphäre (Temperatur, relative Luftfeuchtigkeit, Zusammensetzung der Lageratmosphäre) an.",
+    "img": "../src/images/photos/storage.jpg",
+    "alt": "Apple-Speicher"
+  },
+  {
+    "type": "Sortierung",
+    "description": "Wir haben die Möglichkeit, ausgewähltes Obst und Gemüse nach Größe, Gewicht, Farbe und Qualität zu sortieren, indem wir Wasserentladung, Hydro-Vakuumfüller und ein 26-Kanal-Wassersystem verwenden, das die Einteilung von Äpfeln in ausgewählte Kategorien ermöglicht.",
+    "img": "../src/images/photos/sorting.jpg",
+    "alt": "Apfel-sortierung"
+  },
+  {
+    "type": "Verpackung",
+    "description": "Verfügbare Verpackungen: Folienbeutel, Kartonverpackungen (Buschel), Holzkisten, Kunststoffkisten, Palettenboxen.",
+    "img": "../src/images/photos/packing.jpg",
+    "alt": "Apfel-Verpackung"
+  },
+  {
+    "type": "Transport",
+    "description": "Wir bieten den Transport von Obst und Gemüse mit Kühlfahrzeugen an, mit der Möglichkeit, die Temperatur innerhalb des angegebenen Bereichs konstant zu halten.",
+    "img": "../src/images/photos/transport.jpg",
+    "alt": "Apfel-Transport"
+  }
+]

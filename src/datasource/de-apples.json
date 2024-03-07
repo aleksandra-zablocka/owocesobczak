@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Red Pinova",
+    "description": "Eine spätwinterliche Apfelsorte",
+    "shape": "groß, rund-konisch",
+    "peel": "orangerotes, verschwommenes Rouge",
+    "inside": "hellgelb, mäßig saftig, süß-säuerlich",
+    "caliber": "von 65+ bis 95+",
+    "img": "../src/images/apples/red-pinova.jpg",
+    "alt": "Roter Pinova-Apfel"
+  },
+  {
+    "name": "Jonaprince",
+    "description": "Eine frühwinterliche Apfelsorte",
+    "shape": "groß",
+    "peel": "dunkelrotes Rouge, cremige Haut mit rot-orangefarbenem Rouge",
+    "inside": "süß-säuerlich, knackig, saftig",
+    "caliber": "von 65+ bis 95+",
+    "img": "../src/images/apples/jonaprince.jpg",
+    "alt": "Jonaprince-Apfel"
+  },
+  {
+    "name": "Gala Select",
+    "description": "Eine frühwinterliche Apfelsorte",
+    "shape": "mittel, rund oder rund-konisch",
+    "peel": "glatt, grünlich-gelb, dunkelrot",
+    "inside": "cremig, feinkörnig, saftig, knackig, süß",
+    "caliber": "von 65+ bis 95+",
+    "img": "../src/images/apples/gala-selekt.jpg",
+    "alt": "Gala Select-Apfel"
+  },
+  {
+    "name": "Gala Schniga",
+    "description": "Eine frühwinterliche Apfelsorte",
+    "shape": "klein oder mittelgroß, rund-konisch",
+    "peel": "goldgelbes, dunkelrotes Rouge",
+    "inside": "cremig, süß, knackig, saftig",
+    "caliber": "von 65+ bis 95+",
+    "img": "../src/images/apples/gala-schniga.jpg",
+    "alt": "Gala Schniga-Apfel"
+  }
+]

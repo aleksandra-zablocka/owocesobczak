@@ -1,0 +1,66 @@
+const productList = document.querySelector(".products__list");
+
+fetch("../src/datasource/de-apples.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((apple) => {
+      const listItem = document.createElement("li");
+      listItem.classList.add("products__item");
+
+      listItem.innerHTML = `
+        <figure class="products__figure">
+          <img class="products__image" src="${apple.img}" alt="${apple.alt}" /> 
+          <figcaption class="products__figcaption">${apple.name}</figcaption>
+        </figure>
+      `;
+
+      listItem.addEventListener("click", () => {
+        showModal(apple);
+      });
+
+      productList.appendChild(listItem);
+    });
+  });
+
+function showModal(apple) {
+  const appleBackdrop = document.createElement("div");
+  appleBackdrop.classList.add("apple-backdrop");
+
+  const appleModal = document.createElement("div");
+  appleModal.classList.add("apple-modal");
+
+  appleModal.innerHTML = `
+   <span class="close-btn">&times;</span>
+       <h3 class="apple-title">${apple.name}</h3>
+       <h4>${apple.description}</h4>
+       <div class="apple-description">
+       <p><b>Form:</b> ${apple.shape}</p>
+       <p><b>Schälen:</b> ${apple.peel}</p>
+       <p><b>Zellstoff:</b> ${apple.inside}</p>
+       <p><b>Kaliber:</b> ${apple.caliber}</p>
+       </div>
+       <img src="${apple.img}" alt="${apple.alt}">
+     `;
+
+  function closeModal() {
+    document.body.removeChild(appleBackdrop);
+    document.removeEventListener("keydown", handleKeyPress);
+  }
+
+  function handleKeyPress(event) {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  }
+
+  appleBackdrop.addEventListener("click", (event) => {
+    if (event.target === appleBackdrop || event.target.classList.contains("close-btn")) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", handleKeyPress);
+
+  appleBackdrop.appendChild(appleModal);
+  document.body.appendChild(appleBackdrop);
+}

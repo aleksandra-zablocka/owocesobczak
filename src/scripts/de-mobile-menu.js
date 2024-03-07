@@ -22,24 +22,24 @@ function showMobileModal() {
 </a>
     <div class="languages--mobile">
           <a href="../index.html"> <img class="lang__icon--mobile" src="../src/images/languages/poland.gif" /></a>
-          <a href="./index.html"> <img class="lang__icon--mobile" src="../src/images/languages/uk.gif" /></a>
-          <a href="../de/index.html"> <img class="lang__icon--mobile" src="../src/images/languages/germany.gif" /></a>
+          <a href="../en/index.html"> <img class="lang__icon--mobile" src="../src/images/languages/uk.gif" /></a>
+          <a href="./index.html"> <img class="lang__icon--mobile" src="../src/images/languages/germany.gif" /></a>
     </div>
     </header>
     
     <div>
     <ul class="mobile-nav__list">
       <li>
-        <a class="mobile-nav__item" href="./index.html">Home</a>
+        <a class="mobile-nav__item" href="./index.html">Heim</a>
       </li>
       <li>
-        <a class="mobile-nav__item" href="./about-us.html">About us</a>
+        <a class="mobile-nav__item" href="./uber-uns.html">Über uns</a>
       </li>
       <li>
-        <a class="mobile-nav__item" href="./offer.html">Offer</a>
+        <a class="mobile-nav__item" href="./angebot.html">Angebot</a>
       </li>
       <li>
-        <a class="mobile-nav__item" href="./contact.html">Contact</a>
+        <a class="mobile-nav__item" href="./kontakt.html">Kontakt</a>
       </li>
     </ul>
     </div>
