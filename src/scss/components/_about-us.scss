@@ -5,10 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  // > p {
-  //   margin-bottom: 40px;
-  // }
 }
 
 .about-us__description {
@@ -83,9 +79,7 @@
   }
 
   > img {
-    width: 220px;
     width: 300px;
-    height: 220px;
     height: 300px;
     border-radius: 30px;
     object-fit: cover;

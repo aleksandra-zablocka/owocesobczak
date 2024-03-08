@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <script src="./src/scripts/pl-mobile-menu.js" defer></script>
+    <script src="./src/scripts/privacy-policy.js" defer></script>
   </head>
   <body>
     <header>
@@ -49,9 +50,11 @@
           </div>
         </div>
         <div class="languages">
-          <a href="./index.html"> <img class="lang__icon" src="./src/images/languages/poland.gif" /></a>
-          <a href="./en/index.html"> <img class="lang__icon" src="./src/images/languages/uk.gif" /></a>
-          <a href="./de/index.html"> <img class="lang__icon" src="./src/images/languages/germany.gif" /></a>
+          <a href="./polityka-prywatnosci.html"> <img class="lang__icon" src="./src/images/languages/poland.gif" /></a>
+          <a href="./en/privacy-policy.html"> <img class="lang__icon" src="./src/images/languages/uk.gif" /></a>
+          <a href="./de/datenschutzrichtlinie.html">
+            <img class="lang__icon" src="./src/images/languages/germany.gif"
+          /></a>
         </div>
       </div>
     </header>
@@ -122,6 +125,21 @@
         </div>
       </section>
     </main>
+
+    <div class="cookies">
+      <div class="cookies__content">
+        <p>
+          Ta strona wykorzystuje pliki cookies. Zanim będziesz kontynuować przeglądanie strony, chcielibyśmy
+          poinformować Cię o wykorzystywaniu plików cookies oraz zaprosić do zapoznania się z informacjami dotyczącymi
+          przetwarzania danych użytkowników. W ustawieniach zaawansowanych możesz wyłączyć zbieranie danych. Bez Twojej
+          zgody będziemy wykorzystywać jedynie pliki cookies niezbędne do działania strony. W każdej chwili możesz
+          wycofać swoją zgodę na przetwarzanie danych, uzyskać informacje dotyczące zakresu przetwarzanych danych lub
+          zmienić zakres przetwarzania danych. <br />
+          <a href="./polityka-prywatnosci.html">Zapoznaj się z całą Polityką Prywatności</a>
+        </p>
+        <button class="button--bright cookies__button" onclick="acceptPrivacyPolicy()" type="button">Akceptuję</button>
+      </div>
+    </div>
 
     <footer class="page-footer">
       <div class="page-footer-container container">

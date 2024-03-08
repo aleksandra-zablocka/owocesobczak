@@ -1,7 +1,7 @@
 const cookies = document.querySelector(".cookies");
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (!localStorage.getItem("privacyPolicyAccepted")) {
+  if (!sessionStorage.getItem("privacyPolicyAccepted")) {
     cookies.style.display = "block";
   } else {
     cookies.style.display = "none";
@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function acceptPrivacyPolicy() {
-  localStorage.setItem("privacyPolicyAccepted", "true");
+  sessionStorage.setItem("privacyPolicyAccepted", "true");
   cookies.style.display = "none";
 }

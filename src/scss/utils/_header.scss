@@ -6,8 +6,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
   height: 80px;
+  z-index: 999;
 
   @include tablet {
     height: 80px;
@@ -42,7 +42,6 @@ header {
   padding: 10px 10px;
   border-radius: 10px;
   font-weight: 500;
-  color: var(--green4);
   color: var(--green3);
   transition: color 0.3s ease, filter 0.3s ease, border 0.3s ease, background-color 0.3s ease;
 
@@ -67,7 +66,6 @@ header {
   align-items: center;
 
   .icn {
-    fill: var(--green4);
     fill: var(--green3);
     transition: fill 0.3s ease, filter 0.3s ease, border 0.3s ease;
   }

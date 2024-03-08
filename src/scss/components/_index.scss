@@ -224,11 +224,6 @@
   background-color: rgb(231, 231, 231);
   width: 150px;
   height: 150px;
-
-  // @include tablet {
-  //   width: 150px;
-  //   height: 150px;
-  // }
 }
 
 .contact-us {
@@ -265,27 +260,31 @@
 }
 
 .cookies {
+  background-color: white;
+  border-top: 1px solid var(--green1b);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 100%;
+
+  @include tablet {
+    padding: 20px;
+  }
+
   &__content {
-    background-color: white;
-    border-top: 1px solid var(--green1b);
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 999;
-
-    @include tablet {
-      padding: 20px;
-    }
 
     p {
       margin-bottom: 10px;
       text-align: center;
       font-size: 12px;
+      max-width: 1200px;
 
       @include tablet {
         margin-bottom: 20px;

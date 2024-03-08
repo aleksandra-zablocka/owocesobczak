@@ -18,7 +18,6 @@
   > p {
     max-width: 700px;
     padding: 0 20px;
-    // text-align: justify;
     text-align: center;
 
     @include desktop {
@@ -54,37 +53,20 @@
   justify-content: center;
   gap: 20px;
 
-  // @include tablet {
-  //   gap: 15px;
-  //   flex-direction: row;
-  // }
-
   > figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    // @include tablet {
-    //   justify-content: left;
-    //   align-items: start;
-    // }
   }
 
   > img {
     border-radius: 50%;
-    // width: 200px;
-    // height: 200px;
     width: 150px;
     height: 150px;
     object-fit: cover;
     object-position: center;
     filter: drop-shadow(2px 2px 4px rgba(30, 68, 6, 0.232));
-
-    // @include tablet {
-    //   width: 150px;
-    //   height: 150px;
-    // }
 
     @include desktop {
       width: 180px;
@@ -125,7 +107,6 @@
   > p {
     max-width: 700px;
     padding: 0 20px;
-    // text-align: justify;
     text-align: center;
 
     @include desktop {
