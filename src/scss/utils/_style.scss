@@ -22,6 +22,7 @@ h2 {
   color: var(--green3);
   font-weight: 900;
   font-size: 50px;
+  line-height: 1.1;
 
   @include tablet {
     font-size: 50px;
@@ -35,6 +36,7 @@ h2 {
 h3 {
   color: var(--red1);
   font-size: 30px;
+  line-height: 1.1;
 
   @include tablet {
     font-size: 40px;
@@ -48,6 +50,7 @@ h3 {
 h4 {
   color: var(--green3);
   font-size: 20px;
+  line-height: 1.1;
 }
 
 p,

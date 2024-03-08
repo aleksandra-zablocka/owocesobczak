@@ -1,12 +1,35 @@
 .privacy-policy-container {
+  padding: 40px;
   padding-top: 110px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+
+  h2 {
+    text-align: center;
+    line-height: 1.2;
+  }
 
   h4 {
     margin-top: 30px;
+  }
+}
+
+.privacy-policy-description {
+  max-width: 500px;
+
+  @include tablet {
+    max-width: 800px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
   }
 }
