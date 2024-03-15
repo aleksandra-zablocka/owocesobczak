@@ -16,7 +16,7 @@ function showMobileModal() {
   <span class="mobile-close-btn">&times;</span>
   <a class="logo" href="./index.html"
   ><img
-    src="../src/images/logo/LOGO_SB_KOLOR_1280X1280.png"
+    src="../src/images/logo/LOGO_SB_KOLOR_256X256.png"
     alt="Owoce Sobczak logo"
   />
 </a>
